@@ -82,6 +82,27 @@ Route::prefix('admin')->group(function(){
 				Route::post('update/{id}','OrderController@update')->name('manager.order.update');
 				Route::delete('destroy/{id}','OrderController@destroy')->name('order.destroy');
 			});
+
+			Route::prefix('promotion')->group(function(){
+				Route::get('/','PromotionController@index')->name('manager.promotion');
+				Route::get('listpromotion','PromotionController@getlist')->name('listpromotion');
+				Route::get('add','PromotionController@create')->name('manager.promotion.add');
+				Route::post('add','PromotionController@store')->name('manager.promotion.add');
+				Route::get('edit/{id}','PromotionController@edit')->name('manager.promotion.edit');
+				Route::post('update/{id}','PromotionController@update')->name('manager.promotion.update');
+				Route::delete('destroy/{id}','PromotionController@destroy')->name('promotion.destroy');
+			});
+
+
+			Route::prefix('customer')->group(function(){
+				Route::get('/','CustomerController@index')->name('manager.customer');
+				Route::get('listcustomer','CustomerController@getlist')->name('listcustomer');
+				Route::get('add','CustomerController@create')->name('manager.customer.add');
+				Route::post('add','CustomerController@store')->name('manager.customer.add');
+				Route::get('edit/{id}','CustomerController@edit')->name('manager.customer.edit');
+				Route::post('update/{id}','CustomerController@update')->name('manager.customer.update');
+				Route::delete('destroy/{id}','CustomerController@destroy')->name('customer.destroy');
+			});
 		});
 	});
 });

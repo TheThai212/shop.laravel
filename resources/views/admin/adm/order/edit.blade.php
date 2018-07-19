@@ -26,7 +26,7 @@
                             
                             <div class="widget-bg">
                             <div class="widget-body clearfix">
-                                <h5 class="box-title mr-b-0">Create new </h5>
+                                <h5 class="box-title mr-b-0">Edit table </h5>
                                 <p class="text-muted"></p>
                                 <form action="{{route('manager.order.add')}}" method="POST">
                                 	@csrf()
@@ -49,7 +49,7 @@
 
                                             <select name="customer_id" class="form-control" id="l13">
                                                 @foreach($customers as $customer)
-                                                <option value="{{$customer->id}}">{{$customer->customer_name}}</option>
+                                                <option value="{{$customer->id}} ">{{$customer->customer_name}}</option>
                                                 @endforeach()
                                             </select> 
                                         </div>
@@ -57,7 +57,7 @@
                                     <div class="form-group row">
                                         <label class="col-md-3 col-form-label" for="l1">Totol price</label>
                                         <div class="col-md-9">
-                                            <input name="total_price" class="form-control" id="l1" placeholder="Enter text" type="text"> 
+                                            <input value="{{$order->total_price}}" name="total_price" class="form-control" id="l1" placeholder="Enter text" type="text"> 
                                         </div>
                                     </div>
                                    

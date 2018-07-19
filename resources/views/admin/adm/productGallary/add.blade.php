@@ -3,7 +3,7 @@
 @section('main')
                 <div class="row page-title clearfix">
                 <div class="page-title-left">
-                    <h5 class="mr-0 mr-r-5">Product Table</h5>
+                    <h5 class="mr-0 mr-r-5">Product Gallary Table</h5>
                     
                     {{-- <p class="mr-0 text-muted hidden-sm-down">statistics, charts, events and reports</p> --}}
                 </div>
@@ -12,7 +12,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Dashboard</a>
                         </li>
-                        <li class="breadcrumb-item active">Addtable Table</li>
+                        <li class="breadcrumb-item active">Product Gallary Table</li>
                     </ol>
                     
                 </div>
@@ -28,19 +28,24 @@
                             <div class="widget-body clearfix">
                                 <h5 class="box-title mr-b-0">Create new </h5>
                                 <p class="text-muted"></p>
-                                <form action="{{route('manager.productGallary.add')}}" method="POST">
+                                <form action="{{route('manager.productGallary.add')}}" method="POST"  enctype="multipart/form-data">
                                 	@csrf()
-                                    
-                                    <div class="form-group row">
+
+                                    <div class="form-group">
                                         <label class="col-md-3 col-form-label" for="l1">Link</label>
-                                        <div class="col-md-9">
-                                            <input name="link" class="form-control" id="l1" placeholder="Enter text" type="text"> 
-                                        </div>
-                                    </div>
+                                          Select image to upload:
+                                            <input  type="file" name="link" id="fileToUpload">
+                                      </div>
+
                                     <div class="form-group row">
                                         <label class="col-md-3 col-form-label" for="l1">Product id</label>
                                         <div class="col-md-9">
-                                            <input name="product_id" type="text" id="sampleCurrency" name="sampleCurrency" class="form-control mb-0" data-masked-input="$ 999,999,999.99" placeholder="Enter text" maxlength="19"> 
+
+                                            <select name="product_id" class="form-control" id="l13">
+                                                @foreach($products as $product)
+                                                <option value="{{$product->id}}">{{$product->name}}</option>
+                                                @endforeach()
+                                            </select> 
                                         </div>
                                     </div>
                                    

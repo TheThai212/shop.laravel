@@ -81,7 +81,7 @@
                                 </div>
                                 <div>
                                     <label for="">Original price:</label>
-                                    <span>{{$product->original_price}}</span>
+                                    <span>${{number_format($product->original_price)}}</span>
                                 </div>
                                 <div>
                                     <label for="">Description:</label>

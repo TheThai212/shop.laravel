@@ -3,7 +3,7 @@
 @section('main')
                 <div class="row page-title clearfix">
                 <div class="page-title-left">
-                    <h5 class="mr-0 mr-r-5">Order Table</h5>
+                    <h5 class="mr-0 mr-r-5">Promotion Table</h5>
                     
                     {{-- <p class="mr-0 text-muted hidden-sm-down">statistics, charts, events and reports</p> --}}
                 </div>
@@ -12,7 +12,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Dashboard</a>
                         </li>
-                        <li class="breadcrumb-item active">Order Table</li>
+                        <li class="breadcrumb-item active">Promotion Table</li>
                     </ol>
                     
                 </div>
@@ -25,16 +25,15 @@
 <div class="widget-bg">
                             <div class="widget-body">
                                 {{-- <h5 class="box-title">Basic Table</h5> --}}
-                                    <a href="{{route('manager.order.add')}}" class="btn btn-primary ripple" d><i class="material-icons list-icon fs-24">playlist_add</i> Create New</a>
+                                    <a href="{{route('manager.promotion.add')}}" class="btn btn-primary ripple" d><i class="material-icons list-icon fs-24">playlist_add</i> Create New</a>
                                 {{-- <p>Use basic bootstrap classes <code>.table</code> to any <code>&lt;table&gt;</code> --}}
                                 </p>
-                                <table id="order-table" class="cut-off">
+                                <table id="product_gallary-table" class="cut-off">
                                     <thead>
                                         <tr>
                                             <th>ID</th>
-                                            <th>product_id</th>
-                                            <th>total_price</th>
-                                            <th>customer_id</th>
+                                            <th>Name</th>
+                                            <th>Date</th>
                                             <th><center>#</center></th>
                                         </tr>
                                     </thead>
@@ -48,21 +47,20 @@
                         </div>
                         {{-- modal --}}
 
-                        @foreach($orders as $product)
+                        @foreach($promotions as $product)
                         <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                           <div class="modal-dialog modal-lg">
                             <div  class="modal-content">
                                 <h2>Thông tin sản phẩm</h2>
                                 
                                 <div>
-                                    <label for="">Totle price</label>
-                                    <span>${{number_format($product->total_price)}}</span>
+                                    <label for="">Name:</label>
+                                    <span>{{$product->name}}</span>
                                 </div>
-                                {{-- <div>
-                                    <label for="">Product id:</label>
-                                    <span>{{$product->product_id}}</span>
-                                </div> --}}
-                                
+                                <div>
+                                    <label for="">Date:</label>
+                                    <span>{{$product->date}}</span>
+                                </div>
 
                             </div>
                           </div>
@@ -74,31 +72,30 @@
 @section('footer')
 
     <script>
-    	var orderTable=null;
         $.ajaxSetup({
           headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
           }
         });
-
+        var productTable = null;
 
         $(function(){
-            orderTable = $('#order-table').DataTable({
+            productTable = $('#product_gallary-table').DataTable({
                 processing: true,
                 serverSide: true,
-                ajax: '{!! route('listorder') !!}',
+                ajax: '{!! route('listpromotion') !!}',
                 columns: [
                     { data: 'id', name: 'id' },
-                    { data: 'product_id', name: 'product_id' },
-                    { data: 'total_price', name: 'total_price' },
-                    { data: 'customer_id', name: 'customer_id' },
+                    { data: 'name', name: 'name' },
+                    { data: 'date', name: 'date' },
                     { data: '#', name: '#' },
                   ]
             });
         });
 
-    $(document).ready(function(){
-    $('#order-table').on('click', ".btn-delete", function(){
+
+        $(document).ready(function(){
+    $('#product_gallary-table').on('click', ".btn-delete", function(){
        swal({
           title: "Bạn có chắc chắn xóa",
           text: "Sẽ không thể khôi phục lại nếu xóa",
@@ -116,7 +113,7 @@
                     url: url,
                     success: function(data){
 
-                       orderTable.ajax.reload();//test ddi
+                       productTable.ajax.reload();
                     }
             })
             swal("Đã xóa", {
@@ -129,7 +126,6 @@
     })
 
 });
-
     </script>
 
 @stop

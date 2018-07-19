@@ -3,7 +3,7 @@
 @section('main')
                 <div class="row page-title clearfix">
                 <div class="page-title-left">
-                    <h5 class="mr-0 mr-r-5">Order Table</h5>
+                    <h5 class="mr-0 mr-r-5">Promotion Table</h5>
                     
                     {{-- <p class="mr-0 text-muted hidden-sm-down">statistics, charts, events and reports</p> --}}
                 </div>
@@ -12,7 +12,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Dashboard</a>
                         </li>
-                        <li class="breadcrumb-item active">Order Table</li>
+                        <li class="breadcrumb-item active">Promotion Table</li>
                     </ol>
                     
                 </div>
@@ -28,36 +28,19 @@
                             <div class="widget-body clearfix">
                                 <h5 class="box-title mr-b-0">Create new </h5>
                                 <p class="text-muted"></p>
-                                <form action="{{route('manager.order.add')}}" method="POST">
+                                <form action="{{route('manager.promotion.add')}}" method="POST"  enctype="multipart/form-data">
                                 	@csrf()
-                                    
-                                    
-                                    <div class="form-group row">
-                                        <label class="col-md-3 col-form-label" for="l1">Product</label>
-                                        <div class="col-md-9">
 
-                                            <select name="product_id" class="form-control" id="l13">
-                                                @foreach($products as $product)
-                                                <option value="{{$product->id}}">{{$product->name}}</option>
-                                                @endforeach()
-                                            </select> 
+									<div class="form-group row">
+                                        <label class="col-md-3 col-form-label" for="l1">Name</label>
+                                        <div class="col-md-9">
+                                            <input name="name" class="form-control" id="l1" placeholder="Enter text" type="text"> 
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-md-3 col-form-label" for="l1">Customer</label>
-                                        <div class="col-md-9">
-
-                                            <select name="customer_id" class="form-control" id="l13">
-                                                @foreach($customers as $customer)
-                                                <option value="{{$customer->id}}">{{$customer->customer_name}}</option>
-                                                @endforeach()
-                                            </select> 
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-md-3 col-form-label" for="l1">Totol price</label>
-                                        <div class="col-md-9">
-                                            <input name="total_price" class="form-control" id="l1" placeholder="Enter text" type="text"> 
+                                    <div class="input-group input-has-value">
+                                        <label class="col-md-3 col-form-label" for="l1">Date</label>
+                                            <input name="date" style="margin-left: 15px;" type="text" class="form-control datepicker" value="8/8/2018" data-plugin-options="{&quot;autoclose&quot;: true}"> <span class="input-group-addon"><i class="list-icon material-icons">date_range</i></span>
                                         </div>
                                     </div>
                                    

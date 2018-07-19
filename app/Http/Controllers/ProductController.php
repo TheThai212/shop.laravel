@@ -67,7 +67,7 @@ class ProductController extends Controller
         $this->validate($request,[
 
                 'name'=>'required',
-                'original_price'=>'required',
+                'original_price'=>'required|numeric',
                 'description'=>'required',
                 'content'=>'required',
         ],[]);

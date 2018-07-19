@@ -1,1 +1,1 @@
-{{dd($productGallarys)}}
+{{dd($products)}}

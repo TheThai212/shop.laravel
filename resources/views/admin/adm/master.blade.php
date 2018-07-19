@@ -35,6 +35,8 @@
 
     <script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css">
+
 
 
 </head>
@@ -48,6 +50,8 @@
                 <a href="index.html" class="navbar-brand">
                     <img class="logo-expand" alt="" src="{{asset('')}}/assets/demo/logo-expand.png">
                     <img class="logo-collapse" alt="" src="{{asset('')}}/assets/demo/logo-collapse.png">
+                    {{-- <img class="logo-expand" alt="" src="{{asset('')}}/assets/demo/Untitled.png"> --}}
+
                     <!-- <p>OSCAR</p> -->
                 </a>
             </div>
@@ -192,9 +196,11 @@
             <!-- Sidebar Menu -->
             <nav class="sidebar-nav">
                 <ul class="nav in side-menu">
-                    <li class="menu-item"><a href="{{route('manager.index')}}" class="ripple"><i class="list-icon material-icons">playlist_add</i> <span class="hide-menu">Tables</span></a></li>
+                   
+               
 
-                    
+                <li class="menu-item active"><a href="{{route('manager.customer')}}" class="ripple"><span class="color-color-scheme"><i class="material-icons list-icon">face</i><span class="hide-menu">Customer</span></span></a>  
+                </li>
 
                 <li class="menu-item-has-children active"><a href="javascript:void(0);" class="ripple"><span class="color-color-scheme"><i class="fa fa-product-hunt"></i> <span class="hide-menu">Product Manager</span></span></a>
                     <ul class="list-unstyled sub-menu">
@@ -216,6 +222,10 @@
 
                     </ul>
                 </li>
+
+                 <li class="menu-item active"><a href="{{route('manager.promotion')}}" class="ripple"><span class="color-color-scheme"><i class="list-icon material-icons">lightbulb_outline</i><span class="hide-menu">Promotion</span></span></a>  
+                </li>
+
                 <li class="menu-item-has-children"><a href="javascript:void(0);" class="ripple"><i class="list-icon material-icons">playlist_add</i> <span class="hide-menu">Tables</span></a>
                     <ul class="list-unstyled sub-menu">
                         <li><a href="tables-basic.html">Basic Tables</a>
@@ -606,6 +616,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.25/daterangepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <script src="{{asset('')}}/assets/js/theme.js"></script>
     <script src="{{asset('')}}/assets/js/custom.js"></script>

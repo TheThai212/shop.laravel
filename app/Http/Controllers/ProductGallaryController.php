@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\ProductGallary;
 use Yajra\Datatables\Datatables;
+use Illuminate\Support\Facades\Storage;
 
 class ProductGallaryController extends Controller
 {
@@ -67,8 +68,9 @@ class ProductGallaryController extends Controller
         ],[]);
 
 
+        $path = $request->link->store('images');
         $productGallary = new ProductGallary;
-        $productGallary->link = $request->link;
+        $productGallary->link = $path;
         $productGallary->product_id = $request->product_id;
 
         $productGallary->save();

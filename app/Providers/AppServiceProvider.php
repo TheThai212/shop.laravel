@@ -4,6 +4,9 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
+use App\Product;
+use App\Customer;
+use View;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -14,7 +17,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Schema::defaultStringLength(191);
+       if(Schema::hasTable('products')){
+                View::share('products', Product::all());
+            }
+        if(Schema::hasTable('customers')){
+                View::share('customers', Customer::all());
+            }
     }
 
     /**

@@ -28,7 +28,7 @@ class OrderController extends Controller
     
                 <button  data-toggle="modal" data-target=".bd-example-modal-lg" class="btn btn-info btn-flat" userId="'.$order->id.'"><i class="fa fa-eye"></i></button>
 
-                <a ><button class="btn btn-warning btn-flat" userId="'.$order->id.'"><i class="fa fa-edit"></i> </button></a>
+                <a href="'.route('manager.order.edit', $order->id).'" ><button class="btn btn-warning btn-flat" userId="'.$order->id.'"><i class="fa fa-edit"></i> </button></a>
 
                 <button data-url="'.route('order.destroy', $order->id).'" userId="'.$order->id.'" class="btn btn-danger btn-flat btn-delete"><i class="fa fa-trash-o"></i></button>
 
@@ -62,7 +62,21 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
-        //
+         $this->validate($request,[
+
+                'product_id'=>'required',
+                'customer_id'=>'required',
+                'total_price'=>'required',
+        ],[]);
+
+
+        $order = new Order;
+        $order->product_id = $request->product_id;
+        $order->customer_id = $request->customer_id;
+        $order->total_price = $request->total_price;
+        $order->save();
+
+        return redirect('admin/manager/order')->with('noti','thêm thành công');
     }
 
     /**
@@ -84,7 +98,8 @@ class OrderController extends Controller
      */
     public function edit($id)
     {
-        //
+         $order = Order::find($id);
+        return view('admin.adm.order.edit',compact('order'));
     }
 
     /**
@@ -96,7 +111,21 @@ class OrderController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+         $this->validate($request,[
+
+                'product_id'=>'required',
+                'customer_id'=>'required',
+                'total_price'=>'required',
+        ],[]);
+
+
+        $order = Order::find($id);
+        $order->product_id = $request->product_id;
+        $order->customer_id = $request->customer_id;
+        $order->total_price = $request->total_price;
+        $order->update();
+
+        return redirect('admin/manager/order')->with('noti','thêm thành công');
     }
 
     /**
