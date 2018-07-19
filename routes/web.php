@@ -60,6 +60,28 @@ Route::prefix('admin')->group(function(){
 			Route::post('product/add','ProductController@store')->name('manager.product.add');
 			Route::get('product/edit/{id}','ProductController@edit')->name('manager.product.edit');
 			Route::post('product/edit/{id}','ProductController@update')->name('manager.product.update');
+			Route::delete('product/destroy/{id}','ProductController@destroy')->name('product.destroy');
+
+			Route::prefix('product-gallary')->group(function(){
+				Route::get('/','ProductGallaryController@index')->name('manager.productGallary');
+				Route::get('listgallaryproduct','ProductGallaryController@getlist')->name('listgallaryproduct');
+				Route::get('add','ProductGallaryController@create')->name('manager.productGallary.add');
+				Route::post('add','ProductGallaryController@store')->name('manager.productGallary.add');
+				Route::get('edit/{id}','ProductGallaryController@edit')->name('manager.productGallary.edit');
+				Route::post('update/{id}','ProductGallaryController@update')->name('manager.productGallary.update');
+				Route::delete('destroy/{id}','ProductGallaryController@destroy')->name('productGallary.destroy');
+			});
+
+
+			Route::prefix('order')->group(function(){
+				Route::get('/','OrderController@index')->name('manager.order');
+				Route::get('listorder','OrderController@getlist')->name('listorder');
+				Route::get('add','OrderController@create')->name('manager.order.add');
+				Route::post('add','OrderController@store')->name('manager.order.add');
+				Route::get('edit/{id}','OrderController@edit')->name('manager.order.edit');
+				Route::post('update/{id}','OrderController@update')->name('manager.order.update');
+				Route::delete('destroy/{id}','OrderController@destroy')->name('order.destroy');
+			});
 		});
 	});
 });

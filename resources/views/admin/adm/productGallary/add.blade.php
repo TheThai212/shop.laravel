@@ -12,7 +12,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Dashboard</a>
                         </li>
-                        <li class="breadcrumb-item active">Editable Table</li>
+                        <li class="breadcrumb-item active">Addtable Table</li>
                     </ol>
                     
                 </div>
@@ -26,37 +26,21 @@
                             
                             <div class="widget-bg">
                             <div class="widget-body clearfix">
-                                <h5 class="box-title mr-b-0">Edit product</h5>
+                                <h5 class="box-title mr-b-0">Create new </h5>
                                 <p class="text-muted"></p>
-                                <form action="{{route('manager.product.update',$product->id)}}" method="POST">
+                                <form action="{{route('manager.productGallary.add')}}" method="POST">
                                 	@csrf()
                                     
                                     <div class="form-group row">
-                                        <label class="col-md-3 col-form-label" for="l1">Product Name</label>
+                                        <label class="col-md-3 col-form-label" for="l1">Link</label>
                                         <div class="col-md-9">
-                                            <input value="{{$product->name}}" name="name" class="form-control" id="l1" placeholder="Enter text" type="text"> 
+                                            <input name="link" class="form-control" id="l1" placeholder="Enter text" type="text"> 
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-md-3 col-form-label" for="l1">Origina Price</label>
+                                        <label class="col-md-3 col-form-label" for="l1">Product id</label>
                                         <div class="col-md-9">
-                                            <input value="{{$product->original_price}}" name="original_price" type="text" id="sampleCurrency" name="sampleCurrency" class="form-control mb-0" data-masked-input="$ 999,999,999.99" placeholder="$ 999,999,999.99" maxlength="19"> 
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="form-group row">
-                                        <label class="col-md-3 col-form-label" for="l15">Description</label>
-                                        <div class="col-md-9">
-                                            <textarea  name="description" class="form-control" id="l15" rows="3">{{$product->description}}</textarea>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-md-3 col-form-label" for="l15">Content</label>
-                                        <div class="col-md-9">
-                                            <textarea value="{{$product->content}}" name="content" class="form-control"  rows="5">{{$product->content}}</textarea>
-											<script>
-											    CKEDITOR.replace( 'content' );
-											</script>
+                                            <input name="product_id" type="text" id="sampleCurrency" name="sampleCurrency" class="form-control mb-0" data-masked-input="$ 999,999,999.99" placeholder="Enter text" maxlength="19"> 
                                         </div>
                                     </div>
                                    

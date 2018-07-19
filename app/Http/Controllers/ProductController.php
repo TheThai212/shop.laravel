@@ -19,11 +19,26 @@ class ProductController extends Controller
         return view('admin.adm.product.index',compact('products'));
     }
      public function getList(){
-       $products = Product::all();
+       $products = Product::orderBy('id', 'DESC')->get();
        // dd($products);
         return Datatables::of($products)
-        ->addColumn('#', function ($product) {
-                return '<a href="#edit-'.$product->id.'" class="btn btn-xs btn-primary"><i class="glyphicon glyphicon-edit"></i> Edit</a>';
+        ->addColumn('#', function($product){
+            return '<div class="btn-group">
+
+            <center>
+    
+                <button  data-toggle="modal" data-target=".bd-example-modal-lg" class="btn btn-info btn-flat" userId="'.$product->id.'"><i class="fa fa-eye"></i></button>
+
+                <a href="'.route('manager.product.edit', $product->id).'"><button class="btn btn-warning btn-flat" userId="'.$product->id.'"><i class="fa fa-edit"></i> </button></a>
+
+                <button data-url="'.route('product.destroy', $product->id).'" userId="'.$product->id.'" class="btn btn-danger btn-flat btn-delete"><i class="fa fa-trash-o"></i></button>
+
+
+            </center>
+
+                        
+
+                      </div>';
         })->editColumn('description', function($product){
             return '<p style="width:50%">'.$product->description.' </p>';
         })
@@ -130,6 +145,11 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $product = Product::find($id);
+        $product->delete();
+
+        return response()->json([
+            'noti' => 'deleted'
+        ],200);
     }
 }

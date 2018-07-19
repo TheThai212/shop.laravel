@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="{{asset('')}}/assets/css/pace.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
     <meta charset="utf-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('')}}/assets/demo/favicon.png">
@@ -193,53 +194,26 @@
                 <ul class="nav in side-menu">
                     <li class="menu-item"><a href="{{route('manager.index')}}" class="ripple"><i class="list-icon material-icons">playlist_add</i> <span class="hide-menu">Tables</span></a></li>
 
-                    <li class="menu-item"><a href="{{route('manager.product')}}" class="ripple"><i class="list-icon material-icons">playlist_add</i> <span class="hide-menu">Product Manager</span></a></li>
+                    
 
-                    <li class="current-page menu-item-has-children"><a href="javascript:void(0);" class="ripple"><i class="list-icon material-icons">network_check</i> <span class="hide-menu">Dashboard <span class="badge badge-border badge-border-inverted bg-primary pull-right">5</span></span></a>
-                        <ul
-                        class="list-unstyled sub-menu">
-                            <li><a href="index.html">Default</a>
-                            </li>
-                            <li><a href="http://dharansh.in/oscarhtml/collapse-nav/index.html">Collapsed Nav</a>
-                            </li>
-                            <li><a href="http://dharansh.in/oscarhtml/horizontal-nav-icons/index.html">Horizontal Nav Icons</a>
-                            </li>
-                            <li><a href="http://dharansh.in/oscarhtml/horizontal-nav/index.html">Horizontal Nav</a>
-                            </li>
-                            <li><a href="http://dharansh.in/oscarhtml/ecommerce/index.html">Ecommerce</a>
-                            </li>
-                            <li><a href="http://dharansh.in/oscarhtml/real-estate/index.html">Real Estate</a>
-                            </li>
-                            <li><a href="http://dharansh.in/oscarhtml/university/index.html">University</a>
-                            </li>
-                </ul>
-                </li>
-                <li class="menu-item-has-children active"><a href="javascript:void(0);" class="ripple"><span class="color-color-scheme"><i class="list-icon material-icons">mail_outline</i> <span class="hide-menu">Apps</span></span></a>
+                <li class="menu-item-has-children active"><a href="javascript:void(0);" class="ripple"><span class="color-color-scheme"><i class="fa fa-product-hunt"></i> <span class="hide-menu">Product Manager</span></span></a>
                     <ul class="list-unstyled sub-menu">
-                        <li><a href="app-calender.html">Calender</a>
-                        </li>
-                        <li><a href="app-chat.html">Chat</a>
-                        </li>
-                        <li class="menu-item-has-children"><a href="javascript:void(0);">Inbox</a>
-                            <ul class="list-unstyled sub-menu">
-                                <li><a href="app-inbox.html">Inbox</a>
-                                </li>
-                                <li><a href="app-inbox-single.html">Inbox single</a>
-                                </li>
-                                <li><a href="app-inbox-compose.html">Compose mail</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-item-has-children"><a href="javascript:void(0);">Contacts</a>
-                            <ul class="list-unstyled sub-menu">
-                                <li><a href="app-contacts.html">Contacts List</a>
-                                </li>
-                                <li><a href="app-contacts-alt.html">Contacts List Alt</a>
-                                </li>
-                                <li><a href="app-contacts-details.html">Contact Details</a>
-                                </li>
-                            </ul>
-                        </li>
+                        <li class="menu-item"><a href="{{route('manager.product')}}" class="ripple"><span class="hide-menu">Product</span></a></li>
+                        
+                          <li class="menu-item"><a href="{{route('manager.productGallary')}}" class="ripple"><span class="hide-menu">Product Gallary</span></a></li>
+
+
+
+                    </ul>
+                </li>
+                <li class="menu-item-has-children active"><a href="javascript:void(0);" class="ripple"><span class="color-color-scheme"><i class="material-icons">reorder</i><span class="hide-menu">Order Manager</span></span></a>
+                    <ul class="list-unstyled sub-menu">
+                        <li class="menu-item"><a href="{{route('manager.order')}}" class="ripple"><span class="hide-menu">Order</span></a></li>
+                        
+                          <li class="menu-item"><a href="{{route('manager.order')}}" class="ripple"><span class="hide-menu">Order detail</span></a></li>
+
+
+
                     </ul>
                 </li>
                 <li class="menu-item-has-children"><a href="javascript:void(0);" class="ripple"><i class="list-icon material-icons">playlist_add</i> <span class="hide-menu">Tables</span></a>
@@ -604,6 +578,8 @@
     </div>
     <!--/ #wrapper -->
     <!-- Scripts -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.2/umd/popper.min.js"></script>
     <script src="{{asset('')}}/assets/js/bootstrap.min.js"></script>
@@ -611,7 +587,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.1.3/mediaelementplayer.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/metisMenu/2.7.0/metisMenu.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.7.0/js/perfect-scrollbar.jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.4/sweetalert2.min.js"></script>
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.4/sweetalert2.min.js"></script> --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>

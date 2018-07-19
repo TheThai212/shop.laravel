@@ -14,8 +14,7 @@
                         </li>
                         <li class="breadcrumb-item active">Editable Table</li>
                     </ol>
-                    <div class="d-inline-flex justify-center align-items-center hidden-sm-down"><a href="javascript: void(0);" class="btn btn-outline-primary mr-l-20 btn-sm btn-rounded hidden-xs hidden-sm ripple" target="_blank">Buy Now</a>
-                    </div>
+                    
                 </div>
                 <!-- /.page-title-right -->
             </div>
@@ -63,14 +62,56 @@
                                 </table>
                             </div>
                             <!-- /.widget-body -->
+
                         </div>
+
+                        {{-- modal --}}
+                        @foreach($products as $product)
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-lg">
+                            <div  class="modal-content">
+                                <h2>Thông tin sản phẩm</h2>
+                                <div>
+                                    
+                                    <label for="">Name:</label>
+                                    <span>{{$product->name}}</span>
+                                    
+                                    
+                                    
+                                </div>
+                                <div>
+                                    <label for="">Original price:</label>
+                                    <span>{{$product->original_price}}</span>
+                                </div>
+                                <div>
+                                    <label for="">Description:</label>
+                                    <span>{{$product->description}}</span>
+                                </div>
+                                <div>
+                                    <label for="">Content:</label>
+                                    <span>{!!$product->content!!}</span>
+                                </div>
+
+                            </div>
+                          </div>
+                        </div>
+                        @endforeach
             <!-- /.widget-list -->
 @stop
 
 @section('footer')
+
     <script>
-        $(function(){
-            $('#product-table').DataTable({
+        var productTable=null
+        $.ajaxSetup({
+          headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+          }
+        });
+
+
+          $(function(){
+            productTable = $('#product-table').DataTable({
                 processing: true,
                 serverSide: true,
                 ajax: '{!! route('listproduct') !!}',
@@ -80,9 +121,49 @@
                     { data: 'original_price', name: 'original_price' },
                     { data: 'description', name: 'description' },
                     { data: 'content', name: 'content' },
+                    { data: '#', name: '#' },
                   ]
             });
         });
+    $(document).ready(function(){
+    $('#product-table').on('click', ".btn-delete", function(){
+       swal({
+          title: "Bạn có chắc chắn xóa",
+          text: "Sẽ không thể khôi phục lại nếu xóa",
+          icon: "warning",
+          buttons: true,
+          dangerMode: true,
+        })
+        .then((willDelete) => {
+          if (willDelete) {
+            console.log(url);
+            var url = $(this).attr("data-url");
+            console.log(url);
+            $.ajax({
+                    method:'DELETE',
+                    url: url,
+                    success: function(data){
+
+                       productTable.ajax.reload();
+                    }
+            })
+            swal("Đã xóa", {
+              icon: "success",
+            });
+          } else {
+            swal("Đã hủy xóa");
+          }
+        });
+    })
+
+});
+
+
+    // $(document).ready(function(){
+    //     $('#product-table').on('click',".btn-info",function(){
+    //         alert('aaaa');
+    //     });
+    // });
         
     </script>
 

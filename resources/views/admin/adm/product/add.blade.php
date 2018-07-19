@@ -14,8 +14,7 @@
                         </li>
                         <li class="breadcrumb-item active">Addtable Table</li>
                     </ol>
-                    <div class="d-inline-flex justify-center align-items-center hidden-sm-down"><a href="javascript: void(0);" class="btn btn-outline-primary mr-l-20 btn-sm btn-rounded hidden-xs hidden-sm ripple" target="_blank">Buy Now</a>
-                    </div>
+                    
                 </div>
                 <!-- /.page-title-right -->
             </div>
