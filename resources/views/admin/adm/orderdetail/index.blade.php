@@ -3,7 +3,7 @@
 @section('main')
                 <div class="row page-title clearfix">
                 <div class="page-title-left">
-                    <h5 class="mr-0 mr-r-5">Product Table</h5>
+                    <h5 class="mr-0 mr-r-5">Order Table</h5>
                     
                     {{-- <p class="mr-0 text-muted hidden-sm-down">statistics, charts, events and reports</p> --}}
                 </div>
@@ -12,7 +12,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Dashboard</a>
                         </li>
-                        <li class="breadcrumb-item active">Editable Table</li>
+                        <li class="breadcrumb-item active">Order Table</li>
                     </ol>
                     
                 </div>
@@ -25,72 +25,54 @@
 <div class="widget-bg">
                             <div class="widget-body">
                                 {{-- <h5 class="box-title">Basic Table</h5> --}}
-                                    <a href="{{route('manager.product.add')}}" class="btn btn-primary ripple" d><i class="material-icons list-icon fs-24">playlist_add</i> Create New</a>
+                                    <a href="{{route('manager.orderdetail.add')}}" class="btn btn-primary ripple" d><i class="material-icons list-icon fs-24">playlist_add</i> Create New</a>
                                 {{-- <p>Use basic bootstrap classes <code>.table</code> to any <code>&lt;table&gt;</code> --}}
                                 </p>
-                                <table id="product-table" class="cut-off">
+                                <table id="order-table" class="cut-off">
                                     <thead>
                                         <tr>
                                             <th>ID</th>
-                                            <th>Name</th>
-                                            <th>Original Price</th>
-                                            <th style="width: 70px;">Description</th>
-                                            <th>Content</th>
+                                            <th>order_id</th>
+                                            <th>product_detail_id</th>
+                                            <th>price</th>
+                                            <th>quantity</th>
                                             <th><center>#</center></th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                       {{--  @foreach($products as $product)
-                                        <tr>
-                                            <td>{{$product->id}}</td>
-                                            <td>{{$product->name}}</td>
-                                            <td>${{number_format($product->original_price)}}</td>
-                                            <td>{!! Str::words($product->description, 5,'....')  !!}</td>
-                                            <td>{!! Str::words($product->content, 5,'....')  !!}</td>
-                                            <td style="white-space: nowrap; width: 1%;"><div class="tabledit-toolbar btn-toolbar" style="text-align: left;">
-                                           <div class="btn-group btn-group-sm" style="float: none;">
-
-
-                                            <a href="{{route('manager.product.edit',$product->id)}}"><button type="button" class="tabledit-edit-button btn btn-md btn-default" style="float: none;"><i class="fa fa-pencil-square-o"></i></button></a>
-
-                                            <a href=""><button type="button" class="tabledit-delete-button btn btn-md btn-default" style="float: none;"><i class="fa fa-trash-o"></i></button></a></div>
-                                           </td>
-
-                                        </tr>
-                                        @endforeach --}}
+       
                                     </tbody>
                                 </table>
                             </div>
                             <!-- /.widget-body -->
 
-</div>
-
+                        </div>
                         {{-- modal --}}
-                        @foreach($products as $product)
+
+                        @foreach($orderDetails as $product)
                         <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                           <div class="modal-dialog modal-lg">
                             <div  class="modal-content">
                                 <h2>Thông tin sản phẩm</h2>
+                                
+                                
                                 <div>
-                                    
-                                    <label for="">Name:</label>
-                                    <span>{{$product->name}}</span>
-                                    
-                                    
-                                    
+                                    <label for="">Order id:</label>
+                                    <span>{{$product->order_id}}</span>
                                 </div>
                                 <div>
-                                    <label for="">Original price:</label>
-                                    <span>${{number_format($product->original_price)}}</span>
+                                    <label for="">Product Detail id:</label>
+                                    <span>{{$product->product_detail_id}}</span>
                                 </div>
                                 <div>
-                                    <label for="">Description:</label>
-                                    <span>{{$product->description}}</span>
+                                    <label for="">Price:</label>
+                                    <span>{{$product->price}}</span>
                                 </div>
                                 <div>
-                                    <label for="">Content:</label>
-                                    <span>{!!$product->content!!}</span>
+                                    <label for="">Quantity:</label>
+                                    <span>{{$product->product_id}}</span>
                                 </div>
+                                
 
                             </div>
                           </div>
@@ -102,7 +84,7 @@
 @section('footer')
 
     <script>
-        var productTable=null
+    	var orderTable=null;
         $.ajaxSetup({
           headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -110,23 +92,24 @@
         });
 
 
-          $(function(){
-            productTable = $('#product-table').DataTable({
+        $(function(){
+            orderTable = $('#order-table').DataTable({
                 processing: true,
                 serverSide: true,
-                ajax: '{!! route('listproduct') !!}',
+                ajax: '{!! route('listorderdetail') !!}',
                 columns: [
                     { data: 'id', name: 'id' },
-                    { data: 'name', name: 'name' },
-                    { data: 'original_price', name: 'original_price' },
-                    { data: 'description', name: 'description' },
-                    { data: 'content', name: 'content' },
+                    { data: 'order_id', name: 'order_id' },
+                    { data: 'product_detail_id', name: 'product_detail_id' },
+                    { data: 'price', name: 'price' },
+                    { data: 'quantity', name: 'quantity' },
                     { data: '#', name: '#' },
                   ]
             });
         });
+
     $(document).ready(function(){
-    $('#product-table').on('click', ".btn-delete", function(){
+    $('#order-table').on('click', ".btn-delete", function(){
        swal({
           title: "Bạn có chắc chắn xóa",
           text: "Sẽ không thể khôi phục lại nếu xóa",
@@ -144,7 +127,7 @@
                     url: url,
                     success: function(data){
 
-                       productTable.ajax.reload();
+                       orderTable.ajax.reload();//test ddi
                     }
             })
             swal("Đã xóa", {
@@ -158,13 +141,6 @@
 
 });
 
-
-    // $(document).ready(function(){
-    //     $('#product-table').on('click',".btn-info",function(){
-    //         alert('aaaa');
-    //     });
-    // });
-        
     </script>
 
 @stop

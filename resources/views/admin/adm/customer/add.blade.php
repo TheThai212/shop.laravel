@@ -3,7 +3,7 @@
 @section('main')
                 <div class="row page-title clearfix">
                 <div class="page-title-left">
-                    <h5 class="mr-0 mr-r-5">Order Table</h5>
+                    <h5 class="mr-0 mr-r-5">Customer Table</h5>
                     
                     {{-- <p class="mr-0 text-muted hidden-sm-down">statistics, charts, events and reports</p> --}}
                 </div>
@@ -12,7 +12,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Dashboard</a>
                         </li>
-                        <li class="breadcrumb-item active">Order Table</li>
+                        <li class="breadcrumb-item active">Customer Table</li>
                     </ol>
                     
                 </div>
@@ -28,38 +28,26 @@
                             <div class="widget-body clearfix">
                                 <h5 class="box-title mr-b-0">Create new </h5>
                                 <p class="text-muted"></p>
-                                <form action="{{route('manager.order.add')}}" method="POST">
+                                <form action="{{route('manager.customer.add')}}" method="POST">
                                 	@csrf()
                                     
                                     
                                     <div class="form-group row">
-                                        <label class="col-md-3 col-form-label" for="l1">Product id</label>
+                                        <label class="col-md-3 col-form-label" for="l1">Name</label>
                                         <div class="col-md-9">
-
-                                            <select name="product_id" class="form-control" id="l13">
-                                                @foreach($products as $product)
-                                                <option value="{{$product->id}}">{{$product->name}}</option>
-                                                @endforeach()
-                                            </select> 
+                                            <input name="customer_name" class="form-control" id="l1" placeholder="Enter text" type="text"> 
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-md-3 col-form-label" for="l1">Customer</label>
+                                        <label class="col-md-3 col-form-label" for="l1">Address</label>
                                         <div class="col-md-9">
-
-                                            <select name="customer_id" class="form-control" id="l13">
-                                                @foreach($customers as $product)
-                                                <option value="{{$product->id}}">{{$product->customer_name}}</option>
-                                                @endforeach()
-                                            </select> 
+                                            <input name="customer_address" class="form-control" id="l1" placeholder="Enter text" type="text"> 
                                         </div>
                                     </div>
-
-                                    
                                     <div class="form-group row">
-                                        <label class="col-md-3 col-form-label" for="l1">Totol price</label>
+                                        <label class="col-md-3 col-form-label" for="l1">Phone</label>
                                         <div class="col-md-9">
-                                            <input name="total_price" class="form-control" id="l1" placeholder="Enter text" type="text"> 
+                                            <input name="customer_phone" type="text" id="samplePhone" name="samplePhone" class="form-control mb-0" data-masked-input="999-999-9999" placeholder="XXX-XXX-XXXX" maxlength="12">
                                         </div>
                                     </div>
                                    

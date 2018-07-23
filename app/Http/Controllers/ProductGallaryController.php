@@ -24,7 +24,7 @@ class ProductGallaryController extends Controller
         // return view('admin.adm.product.index',compact('products'));
     }
     public function getList(){
-       $productGallarys = ProductGallary::orderBy('id', 'DESC')->get();
+       $productGallarys = ProductGallary::orderBy('id', 'DESC')->select('id','link','product_id');
        // dd($products);
         return Datatables::of($productGallarys)
         ->addColumn('#', function($productGallary){
@@ -38,8 +38,10 @@ class ProductGallaryController extends Controller
 
 
                       </div>';
-        })
-        ->rawColumns(['#'])
+        })->editColumn('link', function( ProductGallary $productGallary) {
+                    return '<img src= "' . asset(\Storage::url($productGallary->link)) . '" />';
+                })
+        ->rawColumns(['#','link'])
         ->make(true);// 
     }
 
@@ -68,7 +70,7 @@ class ProductGallaryController extends Controller
         ],[]);
 
 
-        $path = $request->link->store('images');
+        $path = $request->link->store('public/images');
         $productGallary = new ProductGallary;
         $productGallary->link = $path;
         $productGallary->product_id = $request->product_id;

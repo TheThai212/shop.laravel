@@ -11,19 +11,19 @@
 		<!-- Mobile Specific Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- External Plugins CSS -->
-		<link rel="stylesheet" href="{{asset('shop/external/slick/slick.css')}}">
-		<link rel="stylesheet" href="{{asset('shop/external/slick/slick-theme.css')}}">
-		<link rel="stylesheet" href="{{asset('shop/external/magnific-popup/magnific-popup.css')}}">
-		<link rel="stylesheet" href="{{asset('shop/external/bootstrap-select/bootstrap-select.css')}}">
+		<link rel="stylesheet" href="{{asset('')}}/shop/external/slick/slick.css">
+		<link rel="stylesheet" href="{{asset('')}}/shop/external/slick/slick-theme.css">
+		<link rel="stylesheet" href="{{asset('')}}/shop/external/magnific-popup/magnific-popup.css">
+		<link rel="stylesheet" href="{{asset('')}}/shop/external/bootstrap-select/bootstrap-select.css">
 		<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
-		<link rel="stylesheet" type="text/css" href="{{asset('shop/external/rs-plugin/css/settings.css')}}" media="screen" />
+		<link rel="stylesheet" type="text/css" href="{{asset('')}}/shop/external/rs-plugin/css/settings.css" media="screen" />
 		<!-- Custom CSS -->
-		<link rel="stylesheet" href="{{asset('shop/css/style.css')}}">
+		<link rel="stylesheet" href="{{asset('')}}/shop/css/style.css">
 		<!-- Icon Fonts  -->
-		<link rel="stylesheet" href="{{asset('shop/font/style.css')}}">
+		<link rel="stylesheet" href="{{asset('')}}/shop/font/style.css">
 		<!-- Head Libs -->	
 		<!-- Modernizr -->
-		<script src="{{asset('shop/external/modernizr/modernizr.js')}}"></script>
+		<script src="{{asset('')}}/shop/external/modernizr/modernizr.js"></script>
 	</head>
 	<body class="index">				  
 		<div id="loader-wrapper">
@@ -54,7 +54,7 @@
 							<li class="col-one-fourth">
 								<span class="image-link">
 								<a href="index.html">
-								<span class="figure"><img class="img-responsive img-border" src="{{asset('shop/images/custom/layout-img-1.jpg')}}" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
+								<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/layout-img-1.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
 								<span class="figcaption">Home page - Layout 1 (Default)</span>
 								</a>
 								</span>
@@ -62,7 +62,7 @@
 							<li class="col-one-fourth">
 								<span class="image-link">
 								<a href="index-02.html">
-								<span class="figure"><img class="img-responsive img-border" src="{{asset('shop/images/custom/layout-img-2.jpg')}}" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
+								<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/layout-img-2.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
 								<span class="figcaption">Home page - Layout 2</span>
 								</a>
 								</span>
@@ -70,7 +70,7 @@
 							<li class="col-one-fourth">
 								<span class="image-link">
 								<a href="index-03.html">
-								<span class="figure"><img class="img-responsive img-border" src="{{asset('shop/images/custom/layout-img-3.jpg')}}" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
+								<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/layout-img-3.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
 								<span class="figcaption">Home page - Layout 3</span>
 								</a>
 								</span>
@@ -78,7 +78,7 @@
 							<li class="col-one-fourth">
 								<span class="image-link">
 								<a href="index-04.html">
-								<span class="figure"><img class="img-responsive img-border" src="{{asset('shop/images/custom/layout-img-4.jpg')}}" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
+								<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/layout-img-4.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
 								<span class="figcaption">Home page - Layout 4</span>
 								</a>
 								</span>
@@ -86,7 +86,7 @@
 							<li class="col-one-fourth">
 								<span class="image-link">
 								<a href="index-05.html">
-								<span class="figure"><img class="img-responsive img-border" src="{{asset('shop/images/custom/layout-img-5.jpg')}}" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
+								<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/layout-img-5.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
 								<span class="figcaption">Home page - Layout 5</span>
 								</a>
 								</span>
@@ -94,7 +94,7 @@
 							<li class="col-one-fourth">
 								<span class="image-link">
 								<a href="index-06.html">
-								<span class="figure"><img class="img-responsive img-border" src="images/custom/layout-img-6.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
+								<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/layout-img-6.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
 								<span class="figcaption">Home page - Layout 6</span>
 								</a>
 								</span>											
@@ -102,7 +102,7 @@
 							<li class="col-one-fourth">
 								<span class="image-link">
 								<a href="index-07.html">
-								<span class="figure"><img class="img-responsive img-border" src="images/custom/layout-img-7.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
+								<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/layout-img-7.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
 								<span class="figcaption">Home page - Layout 7</span>
 								</a>
 								</span>
@@ -110,7 +110,7 @@
 							<li class="col-one-fourth">
 								<span class="image-link">
 								<a href="index-08.html">
-								<span class="figure"><img class="img-responsive img-border" src="images/custom/layout-img-8.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
+								<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/layout-img-8.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
 								<span class="figcaption">Home page - Layout 8</span>
 								</a>
 								</span>
@@ -118,7 +118,7 @@
 							<li class="col-one-fourth">
 								<span class="image-link">
 								<a href="index-09.html">
-								<span class="figure"><img class="img-responsive img-border" src="images/custom/layout-img-9.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
+								<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/layout-img-9.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
 								<span class="figcaption">Home page - Layout 9</span>
 								</a>
 								</span>
@@ -126,7 +126,7 @@
 							<li class="col-one-fourth">
 								<span class="image-link">
 								<a href="index-10.html">
-								<span class="figure"><img class="img-responsive img-border" src="images/custom/layout-img-10.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
+								<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/layout-img-10.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
 								<span class="figcaption">Home page - Layout 10</span>
 								</a>
 								</span>
@@ -134,7 +134,7 @@
 							<li class="col-one-fourth">
 								<span class="image-link">
 								<a href="index-11.html">
-								<span class="figure"><img class="img-responsive img-border" src="images/custom/layout-img-11.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
+								<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/layout-img-11.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
 								<span class="figcaption">Home page - Layout 11</span>
 								</a>
 								</span>
@@ -142,7 +142,7 @@
 							<li class="col-one-fourth">
 								<span class="image-link">
 								<a href="index-12.html">
-								<span class="figure"><img class="img-responsive img-border" src="images/custom/layout-img-12.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
+								<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/layout-img-12.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
 								<span class="figcaption">Home page - Layout 12</span>
 								</a>
 								</span>
@@ -158,7 +158,7 @@
 							<li class="col-one-fourth">
 								<span class="image-link">
 								<a href="listing.html">
-								<span class="figure"><img class="img-responsive" src="images/custom/listing-img-1.png" alt=""/></span>
+								<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/listing-img-1.png" alt=""/></span>
 								<span class="figcaption text-uppercase">left column</span>
 								</a>
 								</span>
@@ -166,7 +166,7 @@
 							<li class="col-one-fourth">
 								<span class="image-link">
 								<a href="listing-left-right-col.html">
-								<span class="figure"><img class="img-responsive" src="images/custom/listing-img-2.png" alt=""/></span>
+								<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/listing-img-2.png" alt=""/></span>
 								<span class="figcaption text-uppercase">left, right column</span>
 								</a>
 								</span>
@@ -174,7 +174,7 @@
 							<li class="col-one-fourth">
 								<span class="image-link">
 								<a href="listing-col-right_03.html">
-								<span class="figure"><img class="img-responsive" src="images/custom/listing-img-3.png" alt=""/></span>
+								<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/listing-img-3.png" alt=""/></span>
 								<span class="figcaption text-uppercase">right column</span>
 								</a>
 								</span>											
@@ -182,7 +182,7 @@
 							<li class="col-one-fourth">
 								<span class="image-link">
 								<a href="listing-without-col-04.html">
-								<span class="figure"><img class="img-responsive" src="images/custom/listing-img-4.png" alt=""/></span>
+								<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/listing-img-4.png" alt=""/></span>
 								<span class="figcaption text-uppercase">without columns</span>
 								</a>
 								</span>
@@ -190,7 +190,7 @@
 							<li class="col-one-fourth">
 								<span class="image-link">
 								<a href="listing-col-left-without-without-static-block_05.html">
-								<span class="figure"><img class="img-responsive" src="images/custom/listing-img-5.png" alt=""/></span>
+								<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/listing-img-5.png" alt=""/></span>
 								<span class="figcaption text-uppercase">left column,<br> without Static block</span>
 								</a>
 								</span>
@@ -198,7 +198,7 @@
 							<li class="col-one-fourth">
 								<span class="image-link">
 								<a href="listing-without-col-without-static-block_06.html">
-								<span class="figure"><img class="img-responsive" src="images/custom/listing-img-6.png" alt=""/></span>
+								<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/listing-img-6.png" alt=""/></span>
 								<span class="figcaption text-uppercase">without columns,<br> without Static block</span>
 								</a>
 								</span>											
@@ -206,7 +206,7 @@
 							<li class="col-one-fourth">
 								<span class="image-link">
 								<a href="listing-without-col-without-static-block_small_07.html">
-								<span class="figure"><img class="img-responsive" src="images/custom/listing-img-7.png" alt=""/></span>
+								<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/listing-img-7.png" alt=""/></span>
 								<span class="figcaption text-uppercase">Small</span>
 								</a>
 								</span>
@@ -214,7 +214,7 @@
 							<li class="col-one-fourth">
 								<span class="image-link">
 								<a href="listing-without-col-without-static-block_big_08.html">
-								<span class="figure"><img class="img-responsive img-border" src="images/custom/listing-img-8.png" alt=""/></span>
+								<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/listing-img-8.png" alt=""/></span>
 								<span class="figcaption text-uppercase">Big</span>
 								</a>
 								</span>
@@ -230,7 +230,7 @@
 							<li class="col-one-third">
 								<span class="image-link">
 								<a href="product-small.html">
-								<span class="figure"><img class="img-responsive" src="images/custom/product-menu-img-1.png" alt=""/></span>
+								<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/product-menu-img-1.png" alt=""/></span>
 								<span class="figcaption text-uppercase">image size  - small</span>
 								</a>
 								</span>
@@ -238,7 +238,7 @@
 							<li class="col-one-third">
 								<span class="image-link">
 								<a href="product.html">
-								<span class="figure"><img class="img-responsive" src="images/custom/product-menu-img-2.png" alt=""/></span>
+								<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/product-menu-img-2.png" alt=""/></span>
 								<span class="figcaption text-uppercase">image size  - medium</span>
 								</a>
 								</span>
@@ -246,7 +246,7 @@
 							<li class="col-one-third">
 								<span class="image-link">
 								<a href="product-big.html">
-								<span class="figure"><img class="img-responsive" src="images/custom/product-menu-img-3.png" alt=""/></span>
+								<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/product-menu-img-3.png" alt=""/></span>
 								<span class="figcaption text-uppercase">image size  - big</span>
 								</a>
 								</span>											
@@ -262,7 +262,7 @@
 							<li class="col-one-third">
 								<span class="image-link">
 								<a href="blog-layout-1.html">
-								<span class="figure"><img class="img-responsive" src="images/custom/blog-menu-img-1.png" alt=""/></span>
+								<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/blog-menu-img-1.png" alt=""/></span>
 								<span class="figcaption text-uppercase">blog - Layout 1</span>
 								</a>
 								</span>
@@ -270,7 +270,7 @@
 							<li class="col-one-third">
 								<span class="image-link">
 								<a href="blog-layout-2.html">
-								<span class="figure"><img class="img-responsive" src="images/custom/blog-menu-img-2.png" alt=""/></span>
+								<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/blog-menu-img-2.png" alt=""/></span>
 								<span class="figcaption text-uppercase">blog - Layout 2</span>
 								</a>
 								</span>
@@ -278,7 +278,7 @@
 							<li class="col-one-third">
 								<span class="image-link">
 								<a href="blog-layout-3.html">
-								<span class="figure"><img class="img-responsive" src="images/custom/blog-menu-img-3.png" alt=""/></span>
+								<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/blog-menu-img-3.png" alt=""/></span>
 								<span class="figcaption text-uppercase">blog - Layout 3</span>
 								</a>
 								</span>											
@@ -294,7 +294,7 @@
 							<li class="col-one-fifth">
 								<span class="image-link">
 								<a href="gallery-layout-1.html">
-								<span class="figure"><img class="img-responsive" src="images/custom/gallery-menu-img-1.png" alt=""/></span>
+								<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/gallery-menu-img-1.png" alt=""/></span>
 								<span class="figcaption text-uppercase">Gallery - Layout 1</span>
 								</a>
 								</span>
@@ -302,7 +302,7 @@
 							<li class="col-one-fifth">
 								<span class="image-link">
 								<a href="gallery-layout-2.html">
-								<span class="figure"><img class="img-responsive" src="images/custom/gallery-menu-img-2.png" alt=""/></span>
+								<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/gallery-menu-img-2.png" alt=""/></span>
 								<span class="figcaption text-uppercase">Gallery - Layout 2</span>
 								</a>
 								</span>
@@ -310,7 +310,7 @@
 							<li class="col-one-fifth">
 								<span class="image-link">
 								<a href="gallery-layout-3.html">
-								<span class="figure"><img class="img-responsive" src="images/custom/gallery-menu-img-3.png" alt=""/></span>
+								<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/gallery-menu-img-3.png" alt=""/></span>
 								<span class="figcaption text-uppercase">Gallery - Layout 3</span>
 								</a>
 								</span>											
@@ -318,7 +318,7 @@
 							<li class="col-one-fifth">
 								<span class="image-link">
 								<a href="gallery-layout-4.html">
-								<span class="figure"><img class="img-responsive" src="images/custom/gallery-menu-img-4.png" alt=""/></span>
+								<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/gallery-menu-img-4.png" alt=""/></span>
 								<span class="figcaption text-uppercase">Gallery - Layout 4</span>
 								</a>
 								</span>											
@@ -326,7 +326,7 @@
 							<li class="col-one-fifth">
 								<span class="image-link">
 								<a href="gallery-layout-5.html">
-								<span class="figure"><img class="img-responsive" src="images/custom/gallery-menu-img-5.png" alt=""/></span>
+								<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/gallery-menu-img-5.png" alt=""/></span>
 								<span class="figcaption text-uppercase">Gallery - Layout 5</span>
 								</a>
 								</span>											
@@ -495,7 +495,7 @@
 					<div class="row">
 						<div class="col-sm-4 col-md-4 col-lg-6 col-xl-7">
 							<!-- logo start --> 
-							<a href="index.html"><img class="logo replace-2x img-responsive" src="{{asset('shop/images/logo.png')}}" alt=""/> </a> 
+							<a href="index.html"><img class="logo replace-2x img-responsive" src="{{asset('')}}/shop/images/logo.png" alt=""/> </a> 
 							<!-- logo end --> 
 						</div>
 						<div class="col-sm-8 col-md-8 col-lg-6 col-xl-5 text-right">
@@ -561,7 +561,7 @@
 													<li class="col-one-fourth">
 														<span class="image-link">
 														<a href="index.html">
-														<span class="figure"><img class="img-responsive img-border" src="{{asset('shop/images/custom/layout-img-1.jpg')}}" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
+														<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/layout-img-1.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
 														<span class="figcaption">Home page - Layout 1 (Default)</span>
 														</a>
 														</span>
@@ -569,7 +569,7 @@
 													<li class="col-one-fourth">
 														<span class="image-link">
 														<a href="index-02.html">
-														<span class="figure"><img class="img-responsive img-border" src="images/custom/layout-img-2.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
+														<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/layout-img-2.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
 														<span class="figcaption">Home page - Layout 2</span>
 														</a>
 														</span>
@@ -577,7 +577,7 @@
 													<li class="col-one-fourth">
 														<span class="image-link">
 														<a href="index-03.html">
-														<span class="figure"><img class="img-responsive img-border" src="images/custom/layout-img-3.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
+														<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/layout-img-3.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
 														<span class="figcaption">Home page - Layout 3</span>
 														</a>
 														</span>
@@ -585,7 +585,7 @@
 													<li class="col-one-fourth">
 														<span class="image-link">
 														<a href="index-04.html">
-														<span class="figure"><img class="img-responsive img-border" src="images/custom/layout-img-4.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
+														<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/layout-img-4.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
 														<span class="figcaption">Home page - Layout 4</span>
 														</a>
 														</span>
@@ -593,7 +593,7 @@
 													<li class="col-one-fourth">
 														<span class="image-link">
 														<a href="index-05.html">
-														<span class="figure"><img class="img-responsive img-border" src="images/custom/layout-img-5.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
+														<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/layout-img-5.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
 														<span class="figcaption">Home page - Layout 5</span>
 														</a>
 														</span>
@@ -601,7 +601,7 @@
 													<li class="col-one-fourth">
 														<span class="image-link">
 														<a href="index-06.html">
-														<span class="figure"><img class="img-responsive img-border" src="images/custom/layout-img-6.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
+														<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/layout-img-6.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
 														<span class="figcaption">Home page - Layout 6</span>
 														</a>
 														</span>											
@@ -609,7 +609,7 @@
 													<li class="col-one-fourth">
 														<span class="image-link">
 														<a href="index-07.html">
-														<span class="figure"><img class="img-responsive img-border" src="images/custom/layout-img-7.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
+														<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/layout-img-7.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
 														<span class="figcaption">Home page - Layout 7</span>
 														</a>
 														</span>
@@ -617,7 +617,7 @@
 													<li class="col-one-fourth">
 														<span class="image-link">
 														<a href="index-08.html">
-														<span class="figure"><img class="img-responsive img-border" src="images/custom/layout-img-8.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
+														<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/layout-img-8.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
 														<span class="figcaption">Home page - Layout 8</span>
 														</a>
 														</span>
@@ -625,7 +625,7 @@
 													<li class="col-one-fourth">
 														<span class="image-link">
 														<a href="index-09.html">
-														<span class="figure"><img class="img-responsive img-border" src="images/custom/layout-img-9.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
+														<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/layout-img-9.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
 														<span class="figcaption">Home page - Layout 9</span>
 														</a>
 														</span>
@@ -633,7 +633,7 @@
 													<li class="col-one-fourth">
 														<span class="image-link">
 														<a href="index-10.html">
-														<span class="figure"><img class="img-responsive img-border" src="images/custom/layout-img-10.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
+														<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/layout-img-10.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
 														<span class="figcaption">Home page - Layout 10</span>
 														</a>
 														</span>
@@ -641,7 +641,7 @@
 													<li class="col-one-fourth">
 														<span class="image-link">
 														<a href="index-11.html">
-														<span class="figure"><img class="img-responsive img-border" src="images/custom/layout-img-11.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
+														<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/layout-img-11.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
 														<span class="figcaption">Home page - Layout 11</span>
 														</a>
 														</span>
@@ -649,7 +649,7 @@
 													<li class="col-one-fourth">
 														<span class="image-link">
 														<a href="index-12.html">
-														<span class="figure"><img class="img-responsive img-border" src="images/custom/layout-img-12.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
+														<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/layout-img-12.jpg" alt=""/><span class="btn btn--ys btn--lg">LAUNCH</span></span>
 														<span class="figcaption">Home page - Layout 12</span>
 														</a>
 														</span>
@@ -664,7 +664,7 @@
 													<li class="col-one-fourth">
 														<span class="image-link">
 														<a href="listing.html">
-														<span class="figure"><img class="img-responsive" src="images/custom/listing-img-1.png" alt=""/></span>
+														<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/listing-img-1.png" alt=""/></span>
 														<span class="figcaption text-uppercase">left column</span>
 														</a>
 														</span>
@@ -672,7 +672,7 @@
 													<li class="col-one-fourth">
 														<span class="image-link">
 														<a href="listing-left-right-col.html">
-														<span class="figure"><img class="img-responsive" src="images/custom/listing-img-2.png" alt=""/></span>
+														<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/listing-img-2.png" alt=""/></span>
 														<span class="figcaption text-uppercase">left, right column</span>
 														</a>
 														</span>
@@ -680,7 +680,7 @@
 													<li class="col-one-fourth">
 														<span class="image-link">
 														<a href="listing-col-right_03.html">
-														<span class="figure"><img class="img-responsive" src="images/custom/listing-img-3.png" alt=""/></span>
+														<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/listing-img-3.png" alt=""/></span>
 														<span class="figcaption text-uppercase">right column</span>
 														</a>
 														</span>											
@@ -688,7 +688,7 @@
 													<li class="col-one-fourth">
 														<span class="image-link">
 														<a href="listing-without-col-04.html">
-														<span class="figure"><img class="img-responsive" src="images/custom/listing-img-4.png" alt=""/></span>
+														<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/listing-img-4.png" alt=""/></span>
 														<span class="figcaption text-uppercase">without columns</span>
 														</a>
 														</span>
@@ -696,7 +696,7 @@
 													<li class="col-one-fourth">
 														<span class="image-link">
 														<a href="listing-col-left-without-without-static-block_05.html">
-														<span class="figure"><img class="img-responsive" src="images/custom/listing-img-5.png" alt=""/></span>
+														<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/listing-img-5.png" alt=""/></span>
 														<span class="figcaption text-uppercase">left column,<br> without Static block</span>
 														</a>
 														</span>
@@ -704,7 +704,7 @@
 													<li class="col-one-fourth">
 														<span class="image-link">
 														<a href="listing-without-col-without-static-block_06.html">
-														<span class="figure"><img class="img-responsive" src="images/custom/listing-img-6.png" alt=""/></span>
+														<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/listing-img-6.png" alt=""/></span>
 														<span class="figcaption text-uppercase">without columns,<br> without Static block</span>
 														</a>
 														</span>											
@@ -712,7 +712,7 @@
 													<li class="col-one-fourth">
 														<span class="image-link">
 														<a href="listing-without-col-without-static-block_small_07.html">
-														<span class="figure"><img class="img-responsive" src="images/custom/listing-img-7.png" alt=""/></span>
+														<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/listing-img-7.png" alt=""/></span>
 														<span class="figcaption text-uppercase">Small</span>
 														</a>
 														</span>
@@ -720,7 +720,7 @@
 													<li class="col-one-fourth">
 														<span class="image-link">
 														<a href="listing-without-col-without-static-block_big_08.html">
-														<span class="figure"><img class="img-responsive img-border" src="images/custom/listing-img-8.png" alt=""/></span>
+														<span class="figure"><img class="img-responsive img-border" src="{{asset('')}}/shop/images/custom/listing-img-8.png" alt=""/></span>
 														<span class="figcaption text-uppercase">Big</span>
 														</a>
 														</span>
@@ -735,7 +735,7 @@
 													<li class="col-one-third">
 														<span class="image-link">
 														<a href="product-small.html">
-														<span class="figure"><img class="img-responsive" src="images/custom/product-menu-img-1.png" alt=""/></span>
+														<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/product-menu-img-1.png" alt=""/></span>
 														<span class="figcaption text-uppercase">image size  - small</span>
 														</a>
 														</span>
@@ -743,7 +743,7 @@
 													<li class="col-one-third">
 														<span class="image-link">
 														<a href="product.html">
-														<span class="figure"><img class="img-responsive" src="images/custom/product-menu-img-2.png" alt=""/></span>
+														<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/product-menu-img-2.png" alt=""/></span>
 														<span class="figcaption text-uppercase">image size  - medium</span>
 														</a>
 														</span>
@@ -751,7 +751,7 @@
 													<li class="col-one-third">
 														<span class="image-link">
 														<a href="product-big.html">
-														<span class="figure"><img class="img-responsive" src="images/custom/product-menu-img-3.png" alt=""/></span>
+														<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/product-menu-img-3.png" alt=""/></span>
 														<span class="figcaption text-uppercase">image size  - big</span>
 														</a>
 														</span>											
@@ -766,7 +766,7 @@
 													<li class="col-one-third">
 														<span class="image-link">
 														<a href="blog-layout-1.html">
-														<span class="figure"><img class="img-responsive" src="images/custom/blog-menu-img-1.png" alt=""/></span>
+														<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/blog-menu-img-1.png" alt=""/></span>
 														<span class="figcaption text-uppercase">blog - Layout 1</span>
 														</a>
 														</span>
@@ -774,7 +774,7 @@
 													<li class="col-one-third">
 														<span class="image-link">
 														<a href="blog-layout-2.html">
-														<span class="figure"><img class="img-responsive" src="images/custom/blog-menu-img-2.png" alt=""/></span>
+														<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/blog-menu-img-2.png" alt=""/></span>
 														<span class="figcaption text-uppercase">blog - Layout 2</span>
 														</a>
 														</span>
@@ -782,7 +782,7 @@
 													<li class="col-one-third">
 														<span class="image-link">
 														<a href="blog-layout-3.html">
-														<span class="figure"><img class="img-responsive" src="images/custom/blog-menu-img-3.png" alt=""/></span>
+														<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/blog-menu-img-3.png" alt=""/></span>
 														<span class="figcaption text-uppercase">blog - Layout 3</span>
 														</a>
 														</span>											
@@ -797,7 +797,7 @@
 													<li class="col-one-fifth">
 														<span class="image-link">
 														<a href="gallery-layout-1.html">
-														<span class="figure"><img class="img-responsive" src="images/custom/gallery-menu-img-1.png" alt=""/></span>
+														<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/gallery-menu-img-1.png" alt=""/></span>
 														<span class="figcaption text-uppercase">Gallery - Layout 1</span>
 														</a>
 														</span>
@@ -805,7 +805,7 @@
 													<li class="col-one-fifth">
 														<span class="image-link">
 														<a href="gallery-layout-2.html">
-														<span class="figure"><img class="img-responsive" src="images/custom/gallery-menu-img-2.png" alt=""/></span>
+														<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/gallery-menu-img-2.png" alt=""/></span>
 														<span class="figcaption text-uppercase">Gallery - Layout 2</span>
 														</a>
 														</span>
@@ -813,7 +813,7 @@
 													<li class="col-one-fifth">
 														<span class="image-link">
 														<a href="gallery-layout-3.html">
-														<span class="figure"><img class="img-responsive" src="images/custom/gallery-menu-img-3.png" alt=""/></span>
+														<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/gallery-menu-img-3.png" alt=""/></span>
 														<span class="figcaption text-uppercase">Gallery - Layout 3</span>
 														</a>
 														</span>											
@@ -821,7 +821,7 @@
 													<li class="col-one-fifth">
 														<span class="image-link">
 														<a href="gallery-layout-4.html">
-														<span class="figure"><img class="img-responsive" src="images/custom/gallery-menu-img-4.png" alt=""/></span>
+														<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/gallery-menu-img-4.png" alt=""/></span>
 														<span class="figcaption text-uppercase">Gallery - Layout 4</span>
 														</a>
 														</span>											
@@ -829,7 +829,7 @@
 													<li class="col-one-fifth">
 														<span class="image-link">
 														<a href="gallery-layout-5.html">
-														<span class="figure"><img class="img-responsive" src="images/custom/gallery-menu-img-5.png" alt=""/></span>
+														<span class="figure"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/gallery-menu-img-5.png" alt=""/></span>
 														<span class="figcaption text-uppercase">Gallery - Layout 5</span>
 														</a>
 														</span>											
@@ -929,7 +929,7 @@
 																		<div class="product__inside">
 																			<!-- product image -->
 																			<div class="product__inside__image">
-																				<a href="product.html"> <img src="images/product/product-20.jpg" alt=""> </a> 																	
+																				<a href="product.html"> <img src="{{asset('')}}/shop/images/product/product-20.jpg" alt=""> </a> 																	
 																			</div>
 																			<!-- /product image --> 
 																			<!-- product name -->
@@ -950,7 +950,7 @@
 																		<div class="product__inside">
 																			<!-- product image -->
 																			<div class="product__inside__image">
-																				<a href="product.html"> <img src="images/product/product-2.jpg" alt=""> </a> 																		
+																				<a href="product.html"> <img src="{{asset('')}}/shop/images/product/product-2.jpg" alt=""> </a> 																		
 																			</div>
 																			<!-- /product image --> 
 																			<!-- product name -->
@@ -971,7 +971,7 @@
 																		<div class="product__inside">
 																			<!-- product image -->
 																			<div class="product__inside__image">
-																				<a href="product.html"> <img src="images/product/product-4.jpg" alt=""> </a>
+																				<a href="product.html"> <img src="{{asset('')}}/shop/images/product/product-4.jpg" alt=""> </a>
 																				
 																			</div>
 																			<!-- /product image --> 
@@ -992,8 +992,8 @@
 													</li>
 													<li class="col-sm-12 hidden-xs">
 														<div class="row">
-															<div class="col-sm-6"> <a href="#" class="discolor-hover"><img class="img-responsive" src="images/custom/banner-megamenu-01.jpg" alt=""/></a> </div>
-															<div class="col-sm-6"> <a href="#" class="discolor-hover"><img class="img-responsive" src="images/custom/banner-megamenu-02.jpg" alt=""/></a> </div>
+															<div class="col-sm-6"> <a href="#" class="discolor-hover"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/banner-megamenu-01.jpg" alt=""/></a> </div>
+															<div class="col-sm-6"> <a href="#" class="discolor-hover"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/banner-megamenu-02.jpg" alt=""/></a> </div>
 														</div>
 													</li>
 												</ul>
@@ -1006,7 +1006,7 @@
 													<li class="col-sm-3">												
 														<a href="listing.html" class="megamenu__subtitle">
 															<span>TOPS</span>
-															<span class="megamenu__category-image hidden-xs"><img class="img-responsive" src="images/custom/mens-category-1.jpg" alt=""/></span>
+															<span class="megamenu__category-image hidden-xs"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/mens-category-1.jpg" alt=""/></span>
 														</a>
 														<ul class="megamenu__submenu megamenu__submenu--marked">
 															<li class="dl-back"><a href="#"><span class="icon icon-chevron_left"></span>back</a></li>
@@ -1019,7 +1019,7 @@
 													<li class="col-sm-3">
 														<a href="listing.html" class="megamenu__subtitle">
 															<span>BOTTOMS</span>
-															<span class="megamenu__category-image hidden-xs"><img class="img-responsive" src="images/custom/mens-category-2.jpg" alt=""/></span>
+															<span class="megamenu__category-image hidden-xs"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/mens-category-2.jpg" alt=""/></span>
 														</a>
 														<ul class="megamenu__submenu megamenu__submenu--marked">
 															<li class="dl-back"><a href="#"><span class="icon icon-chevron_left"></span>back</a></li>
@@ -1032,7 +1032,7 @@
 													<li class="col-sm-3">
 														<a href="#" class="megamenu__subtitle">
 															<span>ACCESSORIES</span>
-															<span class="megamenu__category-image hidden-xs"><img class="img-responsive" src="images/custom/mens-category-3.jpg" alt=""/></span>
+															<span class="megamenu__category-image hidden-xs"><img class="img-responsive" src="{{asset('')}}/shop/images/custom/mens-category-3.jpg" alt=""/></span>
 														</a>
 														<ul class="megamenu__submenu megamenu__submenu--marked">
 															<li class="dl-back"><a href="#"><span class="icon icon-chevron_left"></span>back</a></li>
@@ -1045,7 +1045,7 @@
 														<a href="listing.html" class="megamenu__subtitle"><span>Specials</span></a>
 														<div class="vertical-carousel vertical-carousel-1 special-carousel">
 															<div class="vertical-carousel__item">
-																<div class="vertical-carousel__item__image pull-left"><a href="product.html"><img src="images/product/product-120x150-1.jpg" alt=""></a></div>
+																<div class="vertical-carousel__item__image pull-left"><a href="product.html"><img src="{{asset('')}}/shop/images/product/product-120x150-1.jpg" alt=""></a></div>
 																<div class="product__label product__label--sale"> <span>Sale</span></div>
 																<div class="vertical-carousel__item__title">
 																	<h2><a href="product.html">Mauris lacinia lectus</a></h2>
@@ -1053,7 +1053,7 @@
 																<div class="price-box">$26.00 <span class="price-box__old">$28.00</span></div>
 															</div>
 															<div class="vertical-carousel__item">
-																<div class="vertical-carousel__item__image pull-left"><a href="product.html"><img src="images/product/product-120x150-2.jpg" alt=""></a></div>
+																<div class="vertical-carousel__item__image pull-left"><a href="product.html"><img src="{{asset('')}}/shop/images/product/product-120x150-2.jpg" alt=""></a></div>
 																<div class="product__label product__label--sale"> <span>Sale</span></div>
 																<div class="vertical-carousel__item__title">
 																	<h2><a href="product.html">Incididunt ut labore et dolore magna aliqua</a></h2>
@@ -1065,16 +1065,16 @@
 													<li class="col-sm-12 hidden-xs">
 														<div class="hor-line"></div>
 														<ul class="list-inline brands-list">
-															<li><a href="#"><img src="{{asset('shop/images/custom/brand-01.png')}}" alt=""></a></li>
-															<li><a href="#"><img src="{{asset('shop/images/custom/brand-03.png')}}" alt=""></a></li>
-															<li><a href="#"><img src="{{asset('shop/images/custom/brand-02.png')}}" alt=""></a></li>
-															<li><a href="#"><img src="{{asset('shop/images/custom/brand-05.png')}}" alt=""></a></li>
-															<li><a href="#"><img src="{{asset('shop/images/custom/brand-04.png')}}" alt=""></a></li>
-															<li><a href="#"><img src="{{asset('shop/images/custom/brand-06.png')}}" alt=""></a></li>
-															<li><a href="#"><img src="{{asset('shop/images/custom/brand-07.png')}}" alt=""></a></li>
-															<li><a href="#"><img src="{{asset('shop/images/custom/brand-08.png')}}" alt=""></a></li>
-															<li><a href="#"><img src="{{asset('shop/images/custom/brand-09.png')}}" alt=""></a></li>
-															<li><a href="#"><img src="{{asset('shop/images/custom/brand-10.png')}}" alt=""></a></li>
+															<li><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-01.png" alt=""></a></li>
+															<li><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-03.png" alt=""></a></li>
+															<li><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-02.png" alt=""></a></li>
+															<li><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-05.png" alt=""></a></li>
+															<li><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-04.png" alt=""></a></li>
+															<li><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-06.png" alt=""></a></li>
+															<li><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-07.png" alt=""></a></li>
+															<li><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-08.png" alt=""></a></li>
+															<li><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-09.png" alt=""></a></li>
+															<li><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-10.png" alt=""></a></li>
 														</ul>
 													</li>
 												</ul>
@@ -1131,7 +1131,7 @@
 													<a href="#" class="icon icon-close cart__close"><span>CLOSE</span></a>
 													<ul>
 														<li class="cart__item">
-															<div class="cart__item__image pull-left"><a href="#"><img src="{{asset('shop/images/product/product-1.jpg')}}" alt=""/></a></div>
+															<div class="cart__item__image pull-left"><a href="#"><img src="{{asset('')}}/shop/images/product/product-1.jpg" alt=""/></a></div>
 															<div class="cart__item__control">
 																<div class="cart__item__delete"><a href="#" class="icon icon-delete"><span>Delete</span></a></div>
 																<div class="cart__item__edit"><a href="#" class="icon icon-edit"><span>Edit</span></a></div>
@@ -1157,7 +1157,7 @@
 															</div>
 														</li>
 														<li class="cart__item">
-															<div class="cart__item__image pull-left"><a href="#"><img src="{{asset('shop/images/product/product-2.jpg')}}" alt=""/></a></div>
+															<div class="cart__item__image pull-left"><a href="#"><img src="{{asset('')}}/shop/images/product/product-2.jpg" alt=""/></a></div>
 															<div class="cart__item__control">
 																<div class="cart__item__delete"><a href="#" class="icon icon-delete"><span>Delete</span></a></div>
 																<div class="cart__item__edit"><a href="#" class="icon icon-edit"><span>Edit</span></a></div>
@@ -1205,7 +1205,7 @@
 						<!-- SLIDE -1 -->
 						<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
 							<!-- MAIN IMAGE --> 
-							<img src="{{asset('shop/images/slides/slide-1.jpg')}}"  alt="slide1"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" > 
+							<img src="{{asset('')}}/shop/images/slides/slide-1.jpg"  alt="slide1"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" > 
 							<!-- LAYERS --> 
 							<!-- TEXT -->
 							<div class="tp-caption lfl stb" 
@@ -1227,7 +1227,7 @@
 						<!-- SLIDE 2  -->            
 						<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
 							<!-- MAIN IMAGE --> 
-							<img src="{{asset('shop/images/slides/slide-2.jpg')}}"  alt="slide2"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"> 
+							<img src="{{asset('')}}/shop/images/slides/slide-2.jpg"  alt="slide2"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"> 
 							<!-- LAYERS -->
 							<!-- TEXT -->
 							<div class="tp-caption lfr stb" 
@@ -1249,7 +1249,7 @@
 						<!-- /SLIDE 2  -->						
 						<!-- SLIDE - 3 -->
 						<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
-										<img src="{{asset('shop/images/slides/04/intro_img_03.jpg')}}"  alt="slide3"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+										<img src="{{asset('')}}/shop/images/slides/04/intro_img_03.jpg"  alt="slide3"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
 									<!-- LAYER NR. 1 -->
 									<div class="tp-caption tp-fade fadeout fullscreenvideo"
 										data-x="0"
@@ -1270,10 +1270,10 @@
 
 
 										<video class="video-js vjs-default-skin" preload="none" 
-											poster='{{asset('shop/images/slides/video/video_img.jpg')}}' data-setup="{}">
-											<source src='{{asset('shop/images/slides/video/explore.mp4')}}' type='video/mp4' />
-											<source src='{{asset('shop/images/slides/video/explore.webm')}}' type='video/webm' />
-											<source src='{{asset('shop/images/slides/video/explore.ogv')}}' type='video/ogg'  />
+											poster='{{asset('')}}/shop/images/slides/video/video_img.jpg' data-setup="{}">
+											<source src='{{asset('')}}/shop/images/slides/video/explore.mp4' type='video/mp4' />
+											<source src='{{asset('')}}/shop/images/slides/video/explore.webm' type='video/webm' />
+											<source src='{{asset('')}}/shop/images/slides/video/explore.ogv' type='video/ogg'  />
 										</video>
 
 									</div>
@@ -1315,7 +1315,7 @@
 							<div class="col-sm-4 col-md-4 col-lg-4">
 								<a href="listing.html" class="banner zoom-in">
 									<span class="figure">
-										<img src="{{asset('shop/images/custom/category-3.jpg')}}" alt=""/>
+										<img src="{{asset('')}}/shop/images/custom/category-3.jpg" alt=""/>
 										<span class="figcaption">
 											<span class="block-table">
 												<span class="block-table-cell">
@@ -1330,7 +1330,7 @@
 							<div class="col-sm-4 col-md-4 col-lg-4">
 								<a href="listing.html" class="banner zoom-in">
 								<span class="figure">
-									<img src="{{asset('shop/images/custom/category-2.jpg')}}" alt=""/>
+									<img src="{{asset('')}}/shop/images/custom/category-2.jpg" alt=""/>
 									<span class="figcaption">
 										<span class="block-table">
 											<span class="block-table-cell">
@@ -1345,7 +1345,7 @@
 							<div class="col-sm-4 col-md-4 col-lg-4">
 								<a href="listing.html" class="banner zoom-in">
 								<span class="figure">
-									<img src="{{asset('shop/images/custom/category-1.jpg')}}" alt=""/>
+									<img src="{{asset('')}}/shop/images/custom/category-1.jpg" alt=""/>
 									<span class="figcaption">
 										<span class="block-table">
 											<span class="block-table-cell">
@@ -1382,9 +1382,9 @@
 												<!-- product image carousel -->
 												<div class="product__inside__carousel slide" data-ride="carousel">
 													<div class="carousel-inner" role="listbox">
-														<div class="item active"> <a href="product.html"><img src="{{asset('shop/images/product/product-1.jpg')}}" alt=""></a> </div>
-														<div class="item"> <a href="product.html"><img src="{{asset('shop/images/product/product-2.jpg')}}" alt=""></a> </div>
-														<div class="item"> <a href="product.html"><img src="{{asset('shop/images/product/product-3.jpg')}}" alt=""></a> </div>
+														<div class="item active"> <a href="product.html"><img src="{{asset('')}}/shop/images/product/product-1.jpg" alt=""></a> </div>
+														<div class="item"> <a href="product.html"><img src="{{asset('')}}/shop/images/product/product-2.jpg" alt=""></a> </div>
+														<div class="item"> <a href="product.html"><img src="{{asset('')}}/shop/images/product/product-3.jpg" alt=""></a> </div>
 													</div>
 													<!-- Controls --> 
 													<a class="carousel-control next"></a> <a class="carousel-control prev"></a> 
@@ -1433,9 +1433,9 @@
 												<!-- product info -->
 												<div class="product__inside__info">
 													<ul class="options-swatch options-swatch--color">
-														<li><a href="#"><span class="swatch-label"><img src="{{asset('shop/images/colors/blue.png')}}"  alt=""/></span></a></li>
-														<li><a href="#"><span class="swatch-label"><img src="{{asset('shop/images/colors/yellow.png')}}"  alt=""/></span></a></li>
-														<li><a href="#"><span class="swatch-label"><img src="{{asset('shop/images/colors/red.png')}}"  alt=""/></span></a></li>
+														<li><a href="#"><span class="swatch-label"><img src="{{asset('')}}/shop/images/colors/blue.png"  alt=""/></span></a></li>
+														<li><a href="#"><span class="swatch-label"><img src="{{asset('')}}/shop/images/colors/yellow.png"  alt=""/></span></a></li>
+														<li><a href="#"><span class="swatch-label"><img src="{{asset('')}}/shop/images/colors/red.png"  alt=""/></span></a></li>
 													</ul>
 													<div class="product__inside__info__btns"> <a href="#" class="btn btn--ys btn--xl"><span class="icon icon-shopping_basket"></span> Add to cart</a>
 													<a href="#" class="btn btn--ys btn--xl visible-xs"><span class="icon icon-favorite_border"></span></a>
@@ -1461,7 +1461,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="{{asset('shop/images/product/product-2.jpg')}}" alt=""> </a> 
+												<a href="product.html"> <img src="{{asset('')}}/shop/images/product/product-2.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a> 
 												<!-- /quick-view --> 
@@ -1511,7 +1511,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="{{asset('shop/images/product/product-3.jpg')}}" alt=""> </a> 
+												<a href="product.html"> <img src="{{asset('')}}/shop/images/product/product-3.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a> 
 												<!-- /quick-view --> 
@@ -1560,7 +1560,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="{{asset('shop/images/product/product-4.jpg')}}" alt=""> </a> 
+												<a href="product.html"> <img src="{{asset('')}}/shop/images/product/product-4.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a> 
 												<!-- /quick-view --> 
@@ -1586,9 +1586,9 @@
 												<!-- product info -->
 												<div class="product__inside__info">
 													<ul class="options-swatch options-swatch--color">
-														<li><a href="#"><span class="swatch-label"><img src="{{asset('shop/images/colors/blue.png')}}"  alt=""/></span></a></li>
-														<li><a href="#"><span class="swatch-label"><img src="{{asset('shop/images/colors/yellow.png')}}"  alt=""/></span></a></li>
-														<li><a href="#"><span class="swatch-label"><img src="{{asset('shop/images/colors/red.png')}}"  alt=""/></span></a></li>
+														<li><a href="#"><span class="swatch-label"><img src="{{asset('')}}/shop/images/colors/blue.png"  alt=""/></span></a></li>
+														<li><a href="#"><span class="swatch-label"><img src="{{asset('')}}/shop/images/colors/yellow.png"  alt=""/></span></a></li>
+														<li><a href="#"><span class="swatch-label"><img src="{{asset('')}}/shop/images/colors/red.png"  alt=""/></span></a></li>
 													</ul>
 													<div class="product__inside__info__btns"> <a href="#" class="btn btn--ys btn--xl"><span class="icon icon-shopping_basket"></span> Add to cart</a>
 													<a href="#" class="btn btn--ys btn--xl visible-xs"><span class="icon icon-favorite_border"></span></a>
@@ -1613,7 +1613,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="{{asset('shop/images/product/product-5.jpg')}}" alt=""> </a> 
+												<a href="product.html"> <img src="{{asset('')}}/shop/images/product/product-5.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a> 
 												<!-- /quick-view --> 
@@ -1661,7 +1661,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="{{asset('shop/images/product/product-6.jpg')}}" alt=""> </a> 
+												<a href="product.html"> <img src="{{asset('')}}/shop/images/product/product-6.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a> 
 												<!-- /quick-view --> 
@@ -1709,7 +1709,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="{{asset('shop/images/product/product-7.jpg')}}" alt=""> </a> 
+												<a href="product.html"> <img src="{{asset('')}}/shop/images/product/product-7.jpg" alt=""> </a> 
 												<!-- label sold-out -->
 												<div class="product__label--sold-out"> <span>sold<br>
 													out</span> 
@@ -1759,7 +1759,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="{{asset('shop/images/product/product-8.jpg')}}" alt=""> </a> 
+												<a href="product.html"> <img src="{{asset('')}}/shop/images/product/product-8.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a> 
 												<!-- /quick-view --> 
@@ -1811,7 +1811,7 @@
 							</div>
 							<!-- /title -->
 							
-							<a class="link-img-hover" href="lookbook.html"><img src="{{asset('shop/images/custom/lookbook.jpg')}}" class="img-responsive" alt=""></a>
+							<a class="link-img-hover" href="lookbook.html"><img src="{{asset('')}}/shop/images/custom/lookbook.jpg" class="img-responsive" alt=""></a>
 							
 						</div>
 						<!-- /lookbook -->
@@ -1826,7 +1826,7 @@
 							<div class="col-md-4 col-sm-4 col-xs-12">
 								<a href="listing.html" class="banner zoom-in">
 								<span class="figure">
-									<img src="{{asset('shop/images/custom/banner-01.jpg')}}" alt=""/>
+									<img src="{{asset('')}}/shop/images/custom/banner-01.jpg" alt=""/>
 									<span class="figcaption">
 										<span class="block-table">
 											<span class="block-table-cell">
@@ -1842,7 +1842,7 @@
 							<div class="col-md-4 col-sm-4 col-xs-12">
 								<a href="listing.html" class="banner zoom-in">
 									<span class="figure">
-										<img src="{{asset('shop/images/custom/banner-02.jpg')}}" alt=""/>
+										<img src="{{asset('')}}/shop/images/custom/banner-02.jpg" alt=""/>
 										<span class="figcaption">
 											<span class="block-table">
 												<span class="block-table-cell">
@@ -1858,7 +1858,7 @@
 							<div class="col-md-4 col-sm-4 col-xs-12">
 								<a href="listing.html" class="banner zoom-in">
 									<span class="figure">
-										<img src="{{asset('shop/images/custom/banner-03.jpg')}}" alt=""/>
+										<img src="{{asset('')}}/shop/images/custom/banner-03.jpg" alt=""/>
 										<span class="figcaption">
 											<span class="block-table">
 												<span class="block-table-cell">
@@ -1895,7 +1895,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="{{asset('shop/images/product/product-9.jpg')}}" alt=""> </a> 
+												<a href="product.html"> <img src="{{asset('')}}/shop/images/product/product-9.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a> 
 												<!-- /quick-view --> 
@@ -1939,7 +1939,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="{{asset('shop/images/product/product-10.jpg')}}" alt=""> </a> 
+												<a href="product.html"> <img src="{{asset('')}}/shop/images/product/product-10.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a> 
 												<!-- /quick-view --> 
@@ -1983,7 +1983,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="images/product/product-9.jpg" alt=""> </a> 
+												<a href="product.html"> <img src="{{asset('')}}/shop/images/product/product-9.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a> 
 												<!-- /quick-view --> 
@@ -2027,7 +2027,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="images/product/product-10.jpg" alt=""> </a> 
+												<a href="product.html"> <img src="{{asset('')}}/shop/images/product/product-10.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a> 
 												<!-- /quick-view --> 
@@ -2048,9 +2048,9 @@
 												<!-- product info -->
 												<div class="product__inside__info">
 													<ul class="options-swatch options-swatch--color">
-														<li><a href="#"><span class="swatch-label"><img src="images/colors/blue.png" width="10" height="10" alt=""/></span></a></li>
-														<li><a href="#"><span class="swatch-label"><img src="images/colors/yellow.png" width="10" height="10" alt=""/></span></a></li>
-														<li><a href="#"><span class="swatch-label"><img src="images/colors/red.png" width="10" height="10" alt=""/></span></a></li>
+														<li><a href="#"><span class="swatch-label"><img src="{{asset('')}}/shop/images/colors/blue.png" width="10" height="10" alt=""/></span></a></li>
+														<li><a href="#"><span class="swatch-label"><img src="{{asset('')}}/shop/images/colors/yellow.png" width="10" height="10" alt=""/></span></a></li>
+														<li><a href="#"><span class="swatch-label"><img src="{{asset('')}}/shop/images/colors/red.png" width="10" height="10" alt=""/></span></a></li>
 													</ul>
 													<div  class="product__inside__info__btns"> <a href="#" class="btn btn--ys btn--xl"><span class="icon icon-shopping_basket"></span> Add to cart</a>
 													<a href="#" class="btn btn--ys btn--xl visible-xs"><span class="icon icon-favorite_border"></span></a>
@@ -2084,7 +2084,7 @@
 								
 								<div class="promos__image">
 									<a href="lookbook.html" class="link-img-hover">
-									<img src="images/custom/promos.jpg" class="img-responsive" alt="">
+									<img src="{{asset('')}}/shop/images/custom/promos.jpg" class="img-responsive" alt="">
 									<span class="promos__label">-20%</span>
 									</a>
 								</div>
@@ -2110,7 +2110,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="images/product/product-11.jpg" alt=""> </a> 
+												<a href="product.html"> <img src="{{asset('')}}/shop/images/product/product-11.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a> 
 												<!-- /quick-view --> 
@@ -2133,8 +2133,8 @@
 												<!-- product info -->
 												<div class="product__inside__info">
 													<ul class="options-swatch options-swatch--color">
-														<li><a href="#"><span class="swatch-label"><img src="images/colors/blue.png" width="10" height="10" alt=""/></span></a></li>
-														<li><a href="#"><span class="swatch-label"><img src="images/colors/yellow.png" width="10" height="10" alt=""/></span></a></li>
+														<li><a href="#"><span class="swatch-label"><img src="{{asset('')}}/shop/images/colors/blue.png" width="10" height="10" alt=""/></span></a></li>
+														<li><a href="#"><span class="swatch-label"><img src="{{asset('')}}/shop/images/colors/yellow.png" width="10" height="10" alt=""/></span></a></li>
 													</ul>
 													<div  class="product__inside__info__btns"> <a href="#" class="btn btn--ys btn--xl"><span class="icon icon-shopping_basket"></span> Add to cart</a>
 													<a href="#" class="btn btn--ys btn--xl visible-xs"><span class="icon icon-favorite_border"></span></a>
@@ -2160,7 +2160,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="images/product/product-12.jpg" alt=""> </a> 
+												<a href="product.html"> <img src="{{asset('')}}/shop/images/product/product-12.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a>  
 												<!-- /quick-view --> 
@@ -2206,7 +2206,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="images/product/product-11.jpg" alt=""> </a> 
+												<a href="product.html"> <img src="{{asset('')}}/shop/images/product/product-11.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a> 
 												<!-- /quick-view --> 
@@ -2252,7 +2252,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="images/product/product-12.jpg" alt=""> </a> 
+												<a href="product.html"> <img src="{{asset('')}}/shop/images/product/product-12.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a>  
 												<!-- /quick-view --> 
@@ -2310,7 +2310,7 @@
 								<div class="slider-blog__item">
 									<div class="row">
 										<div class="col-xs-12 col-sm-2 col-sm-offset-3 box-foto">
-											<img src="images/custom/slider-blog-img01.jpg" alt="">
+											<img src="{{asset('')}}/shop/images/custom/slider-blog-img01.jpg" alt="">
 										</div>
 										<div class="col-xs-12 col-sm-5 col-xl-4 box-data">
 											<h6>Eleanor  <em>&nbsp;-&nbsp;  designer</em></h6>
@@ -2327,7 +2327,7 @@
 								<div class="slider-blog__item">
 									<div class="row">
 										<div class="col-xs-12 col-sm-2 col-sm-offset-3 box-foto">
-											<img src="images/custom/slider-blog-img02.jpg" alt="">
+											<img src="{{asset('')}}/shop/images/custom/slider-blog-img02.jpg" alt="">
 										</div>
 										<div class="col-xs-12 col-sm-5 box-data">
 											<h6>Piper  <em>&nbsp;-&nbsp;  designer</em></h6>
@@ -2344,7 +2344,7 @@
 								<div class="slider-blog__item">
 									<div class="row">
 										<div class="col-xs-12 col-sm-2 col-sm-offset-3 box-foto">
-											<img src="images/custom/slider-blog-img03.jpg" alt="">
+											<img src="{{asset('')}}/shop/images/custom/slider-blog-img03.jpg" alt="">
 										</div>
 										<div class="col-xs-12 col-sm-5 box-data">
 											<h6>MARK   <em>&nbsp;-&nbsp;  designer</em></h6>
@@ -2384,7 +2384,7 @@
 										<div class="col-lg-12 col-xl-6">
 											<a href="blog-post-right-column.html">
 												<span class="figure">
-													<img src="images/custom/recent-posts-01.jpg" alt="">
+													<img src="{{asset('')}}/shop/images/custom/recent-posts-01.jpg" alt="">
 													<span class="figcaption label-top-left">
 														<span>
 															<b>26</b>
@@ -2415,7 +2415,7 @@
 										<div class="col-lg-12 col-xl-6">
 											<a href="blog-post-right-column.html">
 											<span class="figure">
-											<img src="images/custom/recent-posts-02.jpg" alt="">
+											<img src="{{asset('')}}/shop/images/custom/recent-posts-02.jpg" alt="">
 											<span class="figcaption label-top-left">
 											<span>
 											<b>26</b>
@@ -2446,7 +2446,7 @@
 										<div class="col-lg-12 col-xl-6">
 											<a href="blog-post-right-column.html">
 											<span class="figure">
-											<img src="images/custom/recent-posts-03.jpg" alt="">
+											<img src="{{asset('')}}/shop/images/custom/recent-posts-03.jpg" alt="">
 											<span class="figcaption label-top-left">
 											<span>
 											<b>26</b>
@@ -2477,7 +2477,7 @@
 										<div class="col-lg-12 col-xl-6">
 											<a href="blog-post-right-column.html">
 											<span class="figure">
-											<img src="images/custom/recent-posts-01.jpg" alt="">
+											<img src="{{asset('')}}/shop/images/custom/recent-posts-01.jpg" alt="">
 											<span class="figcaption label-top-left">
 											<span>
 											<b>26</b>
@@ -2508,7 +2508,7 @@
 										<div class="col-lg-12 col-xl-6">
 											<a href="blog-post-right-column.html">
 											<span class="figure">
-											<img src="images/custom/recent-posts-02.jpg" alt="">
+											<img src="{{asset('')}}/shop/images/custom/recent-posts-02.jpg" alt="">
 											<span class="figcaption label-top-left">
 											<span>
 											<b>26</b>
@@ -2539,7 +2539,7 @@
 										<div class="col-lg-12 col-xl-6">
 											<a href="blog-post-right-column.html">
 											<span class="figure">
-											<img src="images/custom/recent-posts-03.jpg" alt="">
+											<img src="{{asset('')}}/shop/images/custom/recent-posts-03.jpg" alt="">
 											<span class="figcaption label-top-left">
 											<span>
 											<b>26</b>
@@ -2573,26 +2573,26 @@
 				<div class="container">
 					<div class="row">
 						<div class="brands-carousel">
-							<div><a href="#"><img src="images/custom/brand-01.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-02.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-03.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-04.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-05.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-06.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-07.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-08.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-09.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-10.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-01.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-02.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-03.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-04.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-05.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-06.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-07.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-08.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-09.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-10.png" alt=""></a></div>
+							<div><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-01.png" alt=""></a></div>
+							<div><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-02.png" alt=""></a></div>
+							<div><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-03.png" alt=""></a></div>
+							<div><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-04.png" alt=""></a></div>
+							<div><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-05.png" alt=""></a></div>
+							<div><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-06.png" alt=""></a></div>
+							<div><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-07.png" alt=""></a></div>
+							<div><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-08.png" alt=""></a></div>
+							<div><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-09.png" alt=""></a></div>
+							<div><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-10.png" alt=""></a></div>
+							<div><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-01.png" alt=""></a></div>
+							<div><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-02.png" alt=""></a></div>
+							<div><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-03.png" alt=""></a></div>
+							<div><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-04.png" alt=""></a></div>
+							<div><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-05.png" alt=""></a></div>
+							<div><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-06.png" alt=""></a></div>
+							<div><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-07.png" alt=""></a></div>
+							<div><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-08.png" alt=""></a></div>
+							<div><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-09.png" alt=""></a></div>
+							<div><a href="#"><img src="{{asset('')}}/shop/images/custom/brand-10.png" alt=""></a></div>
 						</div>
 					</div>
 				</div>
@@ -2618,7 +2618,7 @@
 					<div class="col-sm-12 col-md-5 col-lg-6 border-sep-right">
 						<div class="footer-logo hidden-xs">
 							<!--  Logo  --> 
-							<a class="logo" href="index.html"> <img class="replace-2x" src="images/logo.png"  alt="YOURStore"> </a> 
+							<a class="logo" href="index.html"> <img class="replace-2x" src="{{asset('')}}/shop/images/logo.png"  alt="YOURStore"> </a> 
 							<!-- /Logo --> 
 						</div>
 						<div class="box-about">
@@ -2740,32 +2740,32 @@
 				<div class="compared-product-row">
 					<div class="compared-product">
 						<a href="#" class="compared-product__delete icon icon-delete"></a>
-						<div class="compared-product__image"><a href="#"><img src="images/product/product-1.jpg" alt=""/></a></div>
+						<div class="compared-product__image"><a href="#"><img src="{{asset('')}}/shop/images/product/product-1.jpg" alt=""/></a></div>
 						<a href="#" class="compared-product__name">Quis nostrud exercitation ullamco labori.</a>
 					</div>
 					<div class="compared-product">
 						<a href="#" class="compared-product__delete icon icon-delete"></a>
-						<div class="compared-product__image"><a href="#"><img src="images/product/product-1.jpg" alt=""/></a></div>
+						<div class="compared-product__image"><a href="#"><img src="{{asset('')}}/shop/images/product/product-1.jpg" alt=""/></a></div>
 						<a href="#" class="compared-product__name">Quis nostrud exercitation ullamco labori.</a>
 					</div>
 					<div class="compared-product">
 						<a href="#" class="compared-product__delete icon icon-delete"></a>
-						<div class="compared-product__image"><a href="#"><img src="images/product/product-1.jpg" alt=""/></a></div>
+						<div class="compared-product__image"><a href="#"><img src="{{asset('')}}/shop/images/product/product-1.jpg" alt=""/></a></div>
 						<a href="#" class="compared-product__name">Quis nostrud exercitation ullamco labori.</a>
 					</div>
 					<div class="compared-product">
 						<a href="#" class="compared-product__delete icon icon-delete"></a>
-						<div class="compared-product__image"><a href="#"><img src="images/product/product-1.jpg" alt=""/></a></div>
+						<div class="compared-product__image"><a href="#"><img src="{{asset('')}}/shop/images/product/product-1.jpg" alt=""/></a></div>
 						<a href="#" class="compared-product__name">Quis nostrud exercitation ullamco labori.</a>
 					</div>
 					<div class="compared-product">
 						<a href="#" class="compared-product__delete icon icon-delete"></a>
-						<div class="compared-product__image"><a href="#"><img src="images/product/product-1.jpg" alt=""/></a></div>
+						<div class="compared-product__image"><a href="#"><img src="{{asset('')}}/shop/images/product/product-1.jpg" alt=""/></a></div>
 						<a href="#" class="compared-product__name">Quis nostrud exercitation ullamco labori.</a>
 					</div>
 					<div class="compared-product">
 						<a href="#" class="compared-product__delete icon icon-delete"></a>
-						<div class="compared-product__image"><a href="#"><img src="images/product/product-1.jpg" alt=""/></a></div>
+						<div class="compared-product__image"><a href="#"><img src="{{asset('')}}/shop/images/product/product-1.jpg" alt=""/></a></div>
 						<a href="#" class="compared-product__name">Quis nostrud exercitation ullamco labori.</a>
 					</div>
 				</div>
@@ -2862,7 +2862,7 @@
 						<div class="row product-info-outer">
 							<div class="col-xs-12 col-sm-5 col-md-6 col-lg-6">
 								<div class="product-main-image">
-									<div class="product-main-image__item"><img src='images/product/product-big-1.jpg' alt="" /></div>
+									<div class="product-main-image__item"><img src='{{asset('')}}/shop/images/product/product-big-1.jpg' alt="" /></div>
 								</div>
 							</div>
 							<div class="product-info col-xs-12 col-sm-7 col-md-6 col-lg-6">
@@ -2876,7 +2876,7 @@
 								<div class="price-box product-info__price"><span class="price-box__new">$65.00</span> <span class="price-box__old">$84.00</span></div>
 								<div class="divider divider--xs product-info__divider"></div>
 								<div class="product-info__description">
-									<div class="product-info__description__brand"><img src="images/custom/brand.png" alt=""> </div>
+									<div class="product-info__description__brand"><img src="{{asset('')}}/shop/images/custom/brand.png" alt=""> </div>
 									<div class="product-info__description__text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
 								</div>
 								<div class="divider divider--xs product-info__divider"></div>
@@ -2885,10 +2885,10 @@
 									<div class="pull-right required">* Required Fields</div>
 								</div>
 								<ul class="options-swatch options-swatch--color options-swatch--lg">
-									<li><a href="#"><span class="swatch-label"><img src="images/colors/oldlace.png" alt=""/></span></a></li>
-									<li><a href="#"><span class="swatch-label"><img src="images/colors/dark-grey.png" alt=""/></span></a></li>
-									<li><a href="#"><span class="swatch-label"><img src="images/colors/grey.png" alt=""/></span></a></li>
-									<li><a href="#"><span class="swatch-label"><img src="images/colors/light-grey.png" alt=""/></span></a></li>
+									<li><a href="#"><span class="swatch-label"><img src="{{asset('')}}/shop/images/colors/oldlace.png" alt=""/></span></a></li>
+									<li><a href="#"><span class="swatch-label"><img src="{{asset('')}}/shop/images/colors/dark-grey.png" alt=""/></span></a></li>
+									<li><a href="#"><span class="swatch-label"><img src="{{asset('')}}/shop/images/colors/grey.png" alt=""/></span></a></li>
+									<li><a href="#"><span class="swatch-label"><img src="{{asset('')}}/shop/images/colors/light-grey.png" alt=""/></span></a></li>
 								</ul>						
 								<div class="wrapper">
 									<div class="pull-left"><span class="option-label">SIZE:</span></div>
@@ -2927,14 +2927,14 @@
 		  <div class="modal-dialog white-modal">
 		    <div class="modal-content modal-md">
 		      <div class="modal-bg-image bottom-right"> 
-			      <img  src="images/custom/newsletter-bg.png" alt="" class="img-responsive"> 
+			      <img  src="{{asset('')}}/shop/images/custom/newsletter-bg.png" alt="" class="img-responsive"> 
 			  </div>
 		      <div class="modal-block">
 			      <div class="modal-header">
 			        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="icon icon-clear"></span></button>
 			      </div>
 			      <div class="modal-newsletter text-center">
-			      	    <img class="logo img-responsive1 replace-2x" src="images/logo.png" alt=""/>
+			      	    <img class="logo img-responsive1 replace-2x" src="{{asset('')}}/shop/images/logo.png" alt=""/>
 			            <h2 class="text-uppercase modal-title">JOIN US NOW!</h2>
 			            <p class="color-dark">And get hot news about the theme</p>
 			            <p class="color font24 custom-font font-lighter">
@@ -2968,24 +2968,24 @@
 
 
 		<!-- jQuery 1.10.1--> 
-		<script src="{{asset('shop/external/jquery/jquery-2.1.4.min.js')}}"></script> 
+		<script src="{{asset('')}}/shop/external/jquery/jquery-2.1.4.min.js"></script> 
 		<!-- Bootstrap 3--> 
-		<script src="{{asset('shop/external/bootstrap/bootstrap.min.js')}}"></script> 
+		<script src="{{asset('')}}/shop/external/bootstrap/bootstrap.min.js"></script> 
 		<!-- Specific Page External Plugins --> 
-		<script src="{{asset('shop/external/slick/slick.min.js')}}"></script>
-		<script src="{{asset('shop/external/bootstrap-select/bootstrap-select.min.js')}}"></script>  
-		<script src="{{asset('shop/external/countdown/jquery.plugin.min.js')}}"></script> 
-		<script src="{{asset('shop/external/countdown/jquery.countdown.min.js')}}"></script>  		
-		<script src="{{asset('shop/external/instafeed/instafeed.min.js')}}"></script>  		
-		<script src="{{asset('shop/external/magnific-popup/jquery.magnific-popup.min.js')}}"></script>  		
-		<script src="{{asset('shop/external/isotope/isotope.pkgd.min.js')}}"></script> 
-		<script src="{{asset('shop/external/imagesloaded/imagesloaded.pkgd.min.js')}}"></script>
-		<script src="{{asset('shop/external/colorbox/jquery.colorbox-min.js')}}"></script>
+		<script src="{{asset('')}}/shop/external/slick/slick.min.js"></script>
+		<script src="{{asset('')}}/shop/external/bootstrap-select/bootstrap-select.min.js"></script>  
+		<script src="{{asset('')}}/shop/external/countdown/jquery.plugin.min.js"></script> 
+		<script src="{{asset('')}}/shop/external/countdown/jquery.countdown.min.js"></script>  		
+		<script src="{{asset('')}}/shop/external/instafeed/instafeed.min.js"></script>  		
+		<script src="{{asset('')}}/shop/external/magnific-popup/jquery.magnific-popup.min.js"></script>  		
+		<script src="{{asset('')}}/shop/external/isotope/isotope.pkgd.min.js"></script> 
+		<script src="{{asset('')}}/shop/external/imagesloaded/imagesloaded.pkgd.min.js"></script>
+		<script src="{{asset('')}}/shop/external/colorbox/jquery.colorbox-min.js"></script>
 		<!-- SLIDER REVOLUTION 4.x SCRIPTS  --> 
-		<script type="text/javascript" src="{{asset('shop/external/rs-plugin/js/jquery.themepunch.tools.min.js')}}"></script> 
-		<script type="text/javascript" src="{{asset('shop/external/rs-plugin/js/jquery.themepunch.revolution.min.js')}}"></script> 
+		<script type="text/javascript" src="{{asset('')}}/shop/external/rs-plugin/js/jquery.themepunch.tools.min.js"></script> 
+		<script type="text/javascript" src="{{asset('')}}/shop/external/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> 
 		<!-- Custom --> 
-		<script src="{{asset('shop/js/custom.js')}}"></script>			
-		<script src="{{asset('shop/js/js-index-01.js')}}"></script>		
+		<script src="{{asset('')}}/shop/js/custom.js"></script>			
+		<script src="{{asset('')}}/shop/js/js-index-01.js"></script>		
 	</body>
 </html>

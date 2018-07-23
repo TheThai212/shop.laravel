@@ -15,7 +15,7 @@ Auth::routes();
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('shop.index');
 });
 Route::get('login/google', 'Auth\LoginController@redirectToProvider');
 Route::get('login/google/callback', 'Auth\LoginController@handleProviderCallback');
@@ -64,12 +64,22 @@ Route::prefix('admin')->group(function(){
 
 			Route::prefix('product-gallary')->group(function(){
 				Route::get('/','ProductGallaryController@index')->name('manager.productGallary');
-				Route::get('listgallaryproduct','ProductGallaryController@getlist')->name('listgallaryproduct');
+				Route::get('listgallaryproduct','ProductGallaryController@getlist')->name('listgallaryproduct1');
 				Route::get('add','ProductGallaryController@create')->name('manager.productGallary.add');
 				Route::post('add','ProductGallaryController@store')->name('manager.productGallary.add');
 				Route::get('edit/{id}','ProductGallaryController@edit')->name('manager.productGallary.edit');
 				Route::post('update/{id}','ProductGallaryController@update')->name('manager.productGallary.update');
 				Route::delete('destroy/{id}','ProductGallaryController@destroy')->name('productGallary.destroy');
+			});
+
+			Route::prefix('productdetail')->group(function(){
+				Route::get('/','ProductDetailController@index')->name('manager.productdetail');
+				Route::get('listproductdetail','ProductDetailController@getlist')->name('listgallaryproduct');
+				Route::get('add','ProductDetailController@create')->name('manager.productdetail.add');
+				Route::post('add','ProductDetailController@store')->name('manager.productdetail.add');
+				Route::get('edit/{id}','ProductDetailController@edit')->name('manager.productdetail.edit');
+				Route::post('update/{id}','ProductDetailController@update')->name('manager.productdetail.update');
+				Route::delete('destroy/{id}','ProductDetailController@destroy')->name('productdetail.destroy');
 			});
 
 
@@ -81,6 +91,15 @@ Route::prefix('admin')->group(function(){
 				Route::get('edit/{id}','OrderController@edit')->name('manager.order.edit');
 				Route::post('update/{id}','OrderController@update')->name('manager.order.update');
 				Route::delete('destroy/{id}','OrderController@destroy')->name('order.destroy');
+			});
+			Route::prefix('order_detail')->group(function(){
+				Route::get('/','OrderDetailController@index')->name('manager.order_detail');
+				Route::get('listorder_detail','OrderDetailController@getlist')->name('listorder_detail');
+				Route::get('add','OrderDetailController@create')->name('manager.order_detail.add');
+				Route::post('add','OrderDetailController@store')->name('manager.order_detail.add');
+				Route::get('edit/{id}','OrderDetailController@edit')->name('manager.order_detail.edit');
+				Route::post('update/{id}','OrderDetailController@update')->name('manager.order_detail.update');
+				Route::delete('destroy/{id}','OrderDetailController@destroy')->name('order_detail.destroy');
 			});
 
 			Route::prefix('promotion')->group(function(){
@@ -102,6 +121,16 @@ Route::prefix('admin')->group(function(){
 				Route::get('edit/{id}','CustomerController@edit')->name('manager.customer.edit');
 				Route::post('update/{id}','CustomerController@update')->name('manager.customer.update');
 				Route::delete('destroy/{id}','CustomerController@destroy')->name('customer.destroy');
+			});
+
+			Route::prefix('orderdetail')->group(function(){
+				Route::get('/','OrderDetailController@index')->name('manager.orderdetail');
+				Route::get('listorderdetail','OrderDetailController@getlist')->name('listorderdetail');
+				Route::get('add','OrderDetailController@create')->name('manager.orderdetail.add');
+				Route::post('add','OrderDetailController@store')->name('manager.orderdetail.add');
+				Route::get('edit/{id}','OrderDetailController@edit')->name('manager.orderdetail.edit');
+				Route::post('update/{id}','OrderDetailController@update')->name('manager.orderdetail.update');
+				Route::delete('destroy/{id}','OrderDetailController@destroy')->name('orderdetail.destroy');
 			});
 		});
 	});

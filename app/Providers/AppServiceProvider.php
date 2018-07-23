@@ -6,6 +6,8 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
 use App\Product;
 use App\Customer;
+use App\Order;
+use App\ProductDetail;
 use View;
 
 class AppServiceProvider extends ServiceProvider
@@ -22,6 +24,12 @@ class AppServiceProvider extends ServiceProvider
             }
         if(Schema::hasTable('customers')){
                 View::share('customers', Customer::all());
+            }
+        if(Schema::hasTable('orders_table')){
+                View::share('orders_table', Order::all());
+            }
+        if(Schema::hasTable('product_details')){
+                View::share('product_details', Customer::all());
             }
     }
 

@@ -12,6 +12,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Thế Thái ADM</title>
     <!-- CSS -->
+
     <link href="{{asset('')}}/assets/vendors/material-icons/material-icons.css" rel="stylesheet" type="text/css">
     <link href="{{asset('')}}/assets/vendors/mono-social-icons/monosocialiconsfont.css" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.4/sweetalert2.css" rel="stylesheet" type="text/css">
@@ -37,7 +38,7 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css">
 
-
+   
 
 </head>
 
@@ -206,7 +207,9 @@
                     <ul class="list-unstyled sub-menu">
                         <li class="menu-item"><a href="{{route('manager.product')}}" class="ripple"><span class="hide-menu">Product</span></a></li>
                         
-                          <li class="menu-item"><a href="{{route('manager.productGallary')}}" class="ripple"><span class="hide-menu">Product Gallary</span></a></li>
+                        <li class="menu-item"><a href="{{route('manager.productGallary')}}" class="ripple"><span class="hide-menu">Product Gallary</span></a></li>
+                        
+                        <li class="menu-item"><a href="{{route('manager.productdetail')}}" class="ripple"><span class="hide-menu">Product Detail</span></a></li>
 
 
 
@@ -216,7 +219,7 @@
                     <ul class="list-unstyled sub-menu">
                         <li class="menu-item"><a href="{{route('manager.order')}}" class="ripple"><span class="hide-menu">Order</span></a></li>
                         
-                          <li class="menu-item"><a href="{{route('manager.order')}}" class="ripple"><span class="hide-menu">Order detail</span></a></li>
+                          <li class="menu-item"><a href="{{route('manager.orderdetail')}}" class="ripple"><span class="hide-menu">Order detail</span></a></li>
 
 
 

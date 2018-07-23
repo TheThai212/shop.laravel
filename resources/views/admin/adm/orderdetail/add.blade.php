@@ -3,7 +3,7 @@
 @section('main')
                 <div class="row page-title clearfix">
                 <div class="page-title-left">
-                    <h5 class="mr-0 mr-r-5">Order Table</h5>
+                    <h5 class="mr-0 mr-r-5">Order Detail Table</h5>
                     
                     {{-- <p class="mr-0 text-muted hidden-sm-down">statistics, charts, events and reports</p> --}}
                 </div>
@@ -12,7 +12,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Dashboard</a>
                         </li>
-                        <li class="breadcrumb-item active">Order Table</li>
+                        <li class="breadcrumb-item active">Order Detail Table</li>
                     </ol>
                     
                 </div>
@@ -28,41 +28,45 @@
                             <div class="widget-body clearfix">
                                 <h5 class="box-title mr-b-0">Create new </h5>
                                 <p class="text-muted"></p>
-                                <form action="{{route('manager.order.add')}}" method="POST">
+                                <form action="{{route('manager.orderdetail.add')}}" method="POST">
                                 	@csrf()
                                     
                                     
                                     <div class="form-group row">
-                                        <label class="col-md-3 col-form-label" for="l1">Product id</label>
+                                        <label class="col-md-3 col-form-label" for="l1">Order Id</label>
                                         <div class="col-md-9">
 
-                                            <select name="product_id" class="form-control" id="l13">
-                                                @foreach($products as $product)
-                                                <option value="{{$product->id}}">{{$product->name}}</option>
+                                            <select name="order_id" class="form-control" id="l13">
+                                                @foreach($orders_table as $product)
+                                                <option value="{{$product->id}}">{{$product->id}}</option>
                                                 @endforeach()
                                             </select> 
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-md-3 col-form-label" for="l1">Customer</label>
+                                        <label class="col-md-3 col-form-label" for="l1">Product Detail Id</label>
                                         <div class="col-md-9">
 
-                                            <select name="customer_id" class="form-control" id="l13">
-                                                @foreach($customers as $product)
-                                                <option value="{{$product->id}}">{{$product->customer_name}}</option>
+                                            <select name="product_detail_id" class="form-control" id="l13">
+                                                @foreach($orders_table as $product)
+                                                <option value="{{$product->id}}">{{$product->id}}</option>
                                                 @endforeach()
                                             </select> 
                                         </div>
                                     </div>
-
                                     
                                     <div class="form-group row">
-                                        <label class="col-md-3 col-form-label" for="l1">Totol price</label>
+                                        <label class="col-md-3 col-form-label" for="l1">Price</label>
                                         <div class="col-md-9">
-                                            <input name="total_price" class="form-control" id="l1" placeholder="Enter text" type="text"> 
+                                            <input name="price" class="form-control" id="l1" placeholder="Enter text" type="text"> 
                                         </div>
                                     </div>
-                                   
+                                    <div class="form-group row">
+                                        <label class="col-md-3 col-form-label" for="l1">Quantity</label>
+                                        <div class="col-md-9">
+                                            <input name="quantity" class="form-control" id="l1" placeholder="Enter text" type="text"> 
+                                        </div>
+                                    </div>                                   
                                     <div class="form-actions">
                                         <div class="form-group row">
                                             <div class="col-md-9 ml-md-auto btn-list">

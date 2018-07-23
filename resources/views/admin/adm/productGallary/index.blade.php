@@ -32,7 +32,7 @@
                                     <thead>
                                         <tr>
                                             <th>ID</th>
-                                            <th>link</th>
+                                            <th>Link</th>
                                             <th>product_id</th>
                                             <th><center>#</center></th>
                                         </tr>
@@ -83,12 +83,12 @@
             productTable = $('#product_gallary-table').DataTable({
                 processing: true,
                 serverSide: true,
-                ajax: '{!! route('listgallaryproduct') !!}',
+                ajax: '{{ route('listgallaryproduct1') }}',
                 columns: [
                     { data: 'id', name: 'id' },
                     { data: 'link', name: 'link' },
                     { data: 'product_id', name: 'product_id' },
-                    { data: '#', name: '#' },
+                    { data: '#', name: '#' }
                   ]
             });
         });

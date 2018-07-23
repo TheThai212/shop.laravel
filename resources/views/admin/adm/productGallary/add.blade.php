@@ -34,8 +34,24 @@
                                     <div class="form-group">
                                         <label class="col-md-3 col-form-label" for="l1">Link</label>
                                           Select image to upload:
-                                            <input  type="file" name="link" id="fileToUpload">
+                                            {{-- <input  type="file"  id="fileToUpload"> --}}
+                                            <input type='file' name="link" onchange="readURL(this);" />
+                                            <img style="height: 20%;width: 20%" id="blah" src="http://placehold.it/180" alt="your image" />
                                       </div>
+                                      <script>
+                                               function readURL(input) {
+                                                if (input.files && input.files[0]) {
+                                                    var reader = new FileReader();
+
+                                                    reader.onload = function (e) {
+                                                        $('#blah')
+                                                            .attr('src', e.target.result);
+                                                    };
+
+                                                    reader.readAsDataURL(input.files[0]);
+                                                }
+                                            }
+                                      </script>
 
                                     <div class="form-group row">
                                         <label class="col-md-3 col-form-label" for="l1">Product id</label>

@@ -3,7 +3,7 @@
 @section('main')
                 <div class="row page-title clearfix">
                 <div class="page-title-left">
-                    <h5 class="mr-0 mr-r-5">Order Table</h5>
+                    <h5 class="mr-0 mr-r-5">Product Detail Table</h5>
                     
                     {{-- <p class="mr-0 text-muted hidden-sm-down">statistics, charts, events and reports</p> --}}
                 </div>
@@ -12,7 +12,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Dashboard</a>
                         </li>
-                        <li class="breadcrumb-item active">Order Table</li>
+                        <li class="breadcrumb-item active">Product Detail Table</li>
                     </ol>
                     
                 </div>
@@ -28,10 +28,11 @@
                             <div class="widget-body clearfix">
                                 <h5 class="box-title mr-b-0">Create new </h5>
                                 <p class="text-muted"></p>
-                                <form action="{{route('manager.order.add')}}" method="POST">
+                                <form action="{{route('manager.productdetail.update',$productdetail->id)}}" method="POST"  enctype="multipart/form-data">
                                 	@csrf()
-                                    
-                                    
+
+                                  
+
                                     <div class="form-group row">
                                         <label class="col-md-3 col-form-label" for="l1">Product id</label>
                                         <div class="col-md-9">
@@ -44,25 +45,41 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-md-3 col-form-label" for="l1">Customer</label>
+                                        <label class="col-md-3 col-form-label" for="l1">Size</label>
                                         <div class="col-md-9">
 
-                                            <select name="customer_id" class="form-control" id="l13">
-                                                @foreach($customers as $product)
-                                                <option value="{{$product->id}}">{{$product->customer_name}}</option>
-                                                @endforeach()
+                                            <select name="size" class="form-control" id="l13">
+                                                <option value="S" <?php if($productdetail == 'S'){
+                                                	echo 'selected';
+                                                }?> >S</option>
+                                                <option value="M" <?php if($productdetail == 'M'){
+                                                	echo 'selected';
+                                                } ?> >M</option>
+                                                <option value="L"<?php if($productdetail == 'L'){
+                                                	echo 'selected';
+                                                }?>>L</option>
+                                                <option value="XL"<?php if($productdetail == 'XL'){
+                                                	echo 'selected';
+                                                }?>>XL</option>
+                                                <option value="XXL"<?php if($productdetail == 'XXL'){
+                                                	echo 'selected';
+                                                }?>>XXL</option>
                                             </select> 
                                         </div>
                                     </div>
-
-                                    
                                     <div class="form-group row">
-                                        <label class="col-md-3 col-form-label" for="l1">Totol price</label>
+                                        <label  class="col-md-3 col-form-label" for="sampleColor">Color Input</label>
                                         <div class="col-md-9">
-                                            <input name="total_price" class="form-control" id="l1" placeholder="Enter text" type="text"> 
+                                            <input  type="color"  name="color" value="{{$productdetail->color}}">
+                                        </div>
+                                        <!-- /.col-sm-9 -->
+                                    </div>
+                                   <div class="form-group row">
+                                        <label class="col-md-3 col-form-label" for="l1">Quanity</label>
+                                        <div class="col-md-9">
+                                            <input value="{{$productdetail->quanity}}" name="quanity" class="form-control" id="l1" placeholder="Enter text" type="text"> 
                                         </div>
                                     </div>
-                                   
                                     <div class="form-actions">
                                         <div class="form-group row">
                                             <div class="col-md-9 ml-md-auto btn-list">

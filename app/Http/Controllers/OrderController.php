@@ -125,7 +125,7 @@ class OrderController extends Controller
         $order->total_price = $request->total_price;
         $order->update();
 
-        return redirect('admin/manager/order')->with('noti','thêm thành công');
+        return redirect('admin/manager/order')->with('noti','sửa thành công');
     }
 
     /**
